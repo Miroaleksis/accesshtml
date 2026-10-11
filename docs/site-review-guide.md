@@ -13,7 +13,7 @@ This document defines review perspectives for the accesshtml.com pattern library
 ## Site Reviews
 
 ### Accessibility Perspective
-Check that the site itself meets WCAG 2.1 AA requirements. Use the `accessibility-advisor` skill to assist. Focus on:
+Check that the site itself meets WCAG 2.1 AA requirements. Focus on:
 - Sufficient color contrast (text, interactive elements, icons)
 - All interactive elements are keyboard accessible and have visible focus indicators
 - All images have appropriate alt text
@@ -50,7 +50,7 @@ Check that the site's own code (not the code examples) is correct and idiomatic 
 ## Code Example Reviews
 
 ### Accessibility Perspective
-Check that the code examples themselves meet WCAG standards. They are the primary deliverable of the site. Use the `accessibility-advisor` skill to assist. Focus on:
+Check that the code examples themselves meet WCAG standards. They are the primary deliverable of the site. Focus on:
 - Interactive elements have correct roles, names, and states
 - Keyboard interaction works correctly
 - ARIA is used correctly and only when native HTML is insufficient
