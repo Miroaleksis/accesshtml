@@ -287,10 +287,22 @@ site-footer {
   display: flex;
 }
 
+.site-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  display: flex;
+}
+
 .site-nav a {
   color: var(--color-700);
   text-decoration: none;
   display: inline-flex;
+  flex-grow: 1;
   align-items: center;
   text-underline-offset: 8px;
   padding: 8px 16px;
@@ -979,6 +991,10 @@ th:has(.table-group-btn) {
     width: 100%;
     border-top: 1.5px solid var(--color-300);
     padding: 16px 0;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
   }
 
   .site-nav a {
