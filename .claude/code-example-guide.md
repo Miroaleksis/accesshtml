@@ -1,4 +1,4 @@
-# Accessibly: Code Example Standards
+# accesshtml.com: Code Example Guide
 
 This document defines the rules for CSS/HTML/JS in the site's code examples (the `snippet-*-html/css/js` blocks). It was distilled from a full site-wide audit and should be followed for all new examples and edits to existing ones.
 

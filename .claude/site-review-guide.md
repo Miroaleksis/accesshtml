@@ -1,6 +1,6 @@
-# Accessibly: Review Instructions
+# accesshtml.com: Site Review Guide
 
-This document defines review perspectives for the Accessibly HTML pattern library. Use these when reviewing pages or code examples on the site.
+This document defines review perspectives for the accesshtml.com pattern library. Use these when reviewing pages or code examples on the site.
 
 **Important: Reviews are read-only. Do not modify any files during a review. Report all findings as comments in the chat only.**
 
