@@ -114,9 +114,9 @@ class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer class="site-footer">
-        <div class="site-logo">
+        <a href="index.html" class="site-logo">
           <img src="images/Logo.svg" alt="accesshtml.com">
-        </div>
+        </a>
         <p class="site-footer-copyright">© 2026</p>
       </footer>
     `;
