@@ -16,9 +16,12 @@
     <h1>Accessible HTML Patterns</h1>
 
     <div class="home-search">
-      <div role="search" class="attr-search">
-        <input type="search" class="search-input" id="pattern-search" aria-label="Search patterns" placeholder="e.g., accordion">
-        <button type="button" id="search-btn" class="button" aria-label="Search"></button>
+      <div class="search-row">
+        <div role="search" class="attr-search">
+          <input type="search" class="search-input" id="pattern-search" aria-label="Search patterns" placeholder="e.g., accordion">
+          <button type="button" id="search-btn" class="button" aria-label="Search"></button>
+        </div>
+        <button type="button" id="sort-btn" class="button" aria-label="Sort Z–A"></button>
       </div>
       <div class="filter-bar" role="group" aria-label="Filter by category">
         <label class="button"><input type="radio" name="filter" value="all" checked autocomplete="off"> Show All</label>
@@ -65,22 +68,6 @@
         </div>
       </div>
 
-      <!-- Button -->
-      <div class="card">
-        <div class="card-preview">
-          <img src="images/Button.svg" alt="">
-        </div>
-        <div class="card-content">
-          <div class="card-heading">
-            <h2><a href="button.html">Button</a></h2>
-          </div>
-          <p>A button triggers an action or event when activated.</p>
-          <div class="tags">
-            <span class="tag tag--category-2">Function/Input</span>
-          </div>
-        </div>
-      </div>
-
       <!-- Breadcrumb -->
       <div class="card">
         <div class="card-preview">
@@ -93,6 +80,22 @@
           <p>A breadcrumb trail consists of a list of links to the parent pages of the current page in hierarchical order.</p>
           <div class="tags">
             <span class="tag tag--category-1">Navigation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="card">
+        <div class="card-preview">
+          <img src="images/Button.svg" alt="">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <h2><a href="button.html">Button</a></h2>
+          </div>
+          <p>A button triggers an action or event when activated.</p>
+          <div class="tags">
+            <span class="tag tag--category-2">Function/Input</span>
           </div>
         </div>
       </div>
@@ -177,22 +180,6 @@
         </div>
       </div>
 
-      <!-- Input Group -->
-      <div class="card">
-        <div class="card-preview">
-          <img src="images/Input-group.svg" alt="">
-        </div>
-        <div class="card-content">
-          <div class="card-heading">
-            <h2><a href="input-group.html">Input Group</a></h2>
-          </div>
-          <p>An input group is a set of related form controls grouped together under a shared label.</p>
-          <div class="tags">
-            <span class="tag tag--category-3">Structure/Layout</span>
-          </div>
-        </div>
-      </div>
-
       <!-- Input Field -->
       <div class="card">
         <div class="card-preview">
@@ -209,18 +196,18 @@
         </div>
       </div>
 
-      <!-- Link -->
+      <!-- Input Group -->
       <div class="card">
         <div class="card-preview">
-          <img src="images/Link.svg" alt="">
+          <img src="images/Input-group.svg" alt="">
         </div>
         <div class="card-content">
           <div class="card-heading">
-            <h2><a href="link.html">Link</a></h2>
+            <h2><a href="input-group.html">Input Group</a></h2>
           </div>
-          <p>A link navigates the user to another location.</p>
+          <p>An input group is a set of related form controls grouped together under a shared label.</p>
           <div class="tags">
-            <span class="tag tag--category-1">Navigation</span>
+            <span class="tag tag--category-3">Structure/Layout</span>
           </div>
         </div>
       </div>
@@ -237,6 +224,22 @@
           <p>Landmarks are used to designate major sections of a webpage.</p>
           <div class="tags">
             <span class="tag tag--category-3">Structure/Layout</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Link -->
+      <div class="card">
+        <div class="card-preview">
+          <img src="images/Link.svg" alt="">
+        </div>
+        <div class="card-content">
+          <div class="card-heading">
+            <h2><a href="link.html">Link</a></h2>
+          </div>
+          <p>A link navigates the user to another location.</p>
+          <div class="tags">
+            <span class="tag tag--category-1">Navigation</span>
           </div>
         </div>
       </div>
