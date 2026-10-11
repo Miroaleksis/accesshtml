@@ -1,4 +1,4 @@
-# accesshtml.com: Accessibility Features Guide
+# AccessHTML.com: Accessibility Features Guide
 
 Rules for the "Accessibility Features" list items (`<li aria-description="Required/Recommended">`) across all pattern pages. The same rules apply to any text in snippet descriptions that describes accessibility features, whether or not it is marked with `aria-description`. Text that only describes the nature of an element is excluded.
 
