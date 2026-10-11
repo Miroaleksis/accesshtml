@@ -2,7 +2,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 :root {
-  --black: #3f3f3f;
   --dark-gray: dimgray;
   --semi-gray: #757575;
   --medium-gray: darkgray;
@@ -12,7 +11,6 @@
   --white: #ffffff;
   --blue: #0077a0;
 
-  --purple-900: #1e0e3d;
   --purple-700: #3b1f6b;
   --purple-500: #6b4f9a;
   --purple-400: #9d7dc4;
@@ -21,7 +19,6 @@
   --purple-100: #f5f2fb;
   --magenta: #be185d;
 
-  --color-900: var(--purple-900);
   --color-700: var(--purple-700);
   --color-500: var(--purple-500);
   --color-400: var(--purple-400);
@@ -300,11 +297,11 @@ site-footer {
 }
 
 .site-nav a:hover {
-  text-decoration: underline var(--color-700);
+  text-decoration: underline var(--color-300);
 }
 
 .site-nav a[aria-current="page"] {
-  text-decoration: underline;
+  text-decoration: underline var(--color-400);
   background: var(--color-100);
 }
 
@@ -976,16 +973,19 @@ th:has(.table-group-btn) {
     flex-direction: column;
     width: 100%;
     border-top: 1.5px solid var(--color-300);
+    padding: 16px 0;
   }
 
   .site-nav a {
-    padding: 16px 0;
+    padding: 16px;
   }
 
   .site-nav a:hover,
   .site-nav a[aria-current="page"] {
     color: inherit;
-    background: none;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
   }
 
   .nav-toggle[aria-expanded="true"] ~ .site-nav {
