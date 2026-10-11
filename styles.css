@@ -16,7 +16,7 @@
   --purple-400: #9d7dc4;
   --purple-300: #c9b8e8;
   --purple-150: #ede8f7;
-  --purple-100: #f5f2fb;
+  --purple-100: #f9f7fd;
   --magenta: #be185d;
 
   --color-700: var(--purple-700);
@@ -316,6 +316,12 @@ site-footer {
 
 /* ── Breadcrumb bar ──────────────────────── */
 
+breadcrumb-bar {
+  display: block;
+  border-top: 1.5px solid var(--color-300);
+  border-bottom: 1.5px solid var(--color-300);
+}
+
 .breadcrumb-bar {
   padding: 24px 48px;
 }
@@ -335,7 +341,7 @@ site-footer {
 /* ── Page layout ─────────────────────────── */
 
 .page-inner {
-  padding: 104px 48px;
+  padding: 120px 48px;
   display: flex;
   gap: 64px;
   align-items: flex-start;
@@ -977,15 +983,13 @@ th:has(.table-group-btn) {
   }
 
   .site-nav a {
-    padding: 16px;
+    padding: 16px 0;
   }
 
-  .site-nav a:hover,
   .site-nav a[aria-current="page"] {
-    color: inherit;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
+    margin-left: -24px;
+    padding-left: 24px;
   }
 
   .nav-toggle[aria-expanded="true"] ~ .site-nav {
@@ -1008,7 +1012,7 @@ th:has(.table-group-btn) {
   .page-inner {
     flex-direction: column;
     align-items: stretch;
-    padding: 64px 24px;
+    padding: 80px 24px;
     gap: 40px;
   }
 
