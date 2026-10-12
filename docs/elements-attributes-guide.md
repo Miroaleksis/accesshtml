@@ -59,7 +59,13 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 ### 3.2. Commonly confused terms
 
 3.2.1. When a term is commonly mistaken for something else, the description ends with a "Not to be confused with" sentence that names the other thing.
-   > `menu`: A list of choices or commands, typically opened from a button, as in an application. Not to be confused with a navigation menu, which typically uses a `<nav>` landmark with links.
+   > `menu / menubar`: A list of choices or commands, as in an application. A menu is typically opened from a button, while a menubar stays visible and is usually presented horizontally. Not to be confused with a navigation menu, which typically uses a `<nav>` landmark with links.
+
+### 3.3. Alternatives on one row
+
+3.3.1. When a row groups alternatives with `/` that differ in meaning, the description explains how they differ. Synonyms need no explanation.
+   > `<ul> / <ol>`: A list of items. A `<ul>` is an unordered list, where the order of the items does not matter, and an `<ol>` is an ordered list, where the order of the items is meaningful.
+   > `presentation / none` needs no explanation, because the two are the same thing.
 
 ---
 
