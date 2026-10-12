@@ -142,7 +142,8 @@ button::after,
 /* ── Typography ──────────────────────────── */
 
 .page-section ol,
-.page-section ul {
+.page-section ul,
+.page-description ul {
   padding-inline-start: 1.2em;
 }
 
