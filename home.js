@@ -47,18 +47,3 @@ document.getElementById('search-btn').addEventListener('click', performSearch);
 document.querySelectorAll('.filter-bar input').forEach(input => {
   input.addEventListener('change', applyFilters);
 });
-
-const grid = document.querySelector('.cards-grid');
-const sortBtn = document.getElementById('sort-btn');
-let ascending = true;
-
-sortBtn.addEventListener('click', () => {
-  ascending = !ascending;
-  const sorted = [...cards].sort((a, b) =>
-    a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent));
-  if (!ascending) sorted.reverse();
-  sorted.forEach(card => grid.appendChild(card));
-  sortBtn.textContent = ascending ? 'Z–A' : 'A–Z';
-  sortBtn.setAttribute('aria-label', ascending ? 'Sort Z–A' : 'Sort A–Z');
-  sortBtn.dataset.order = ascending ? 'asc' : 'desc';
-});

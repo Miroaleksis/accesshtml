@@ -517,14 +517,8 @@ on-this-page {
   margin-bottom: 32px;
 }
 
-.search-row {
-  display: flex;
-  gap: 8px;
-}
-
 .home-search .attr-search {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
 }
 
 .tags {
@@ -768,20 +762,6 @@ code-editor {
   content: 'search' / '';
   font-family: 'Material Symbols Outlined';
   font-size: 24px;
-}
-
-#sort-btn {
-  padding: 0 16px;
-}
-
-#sort-btn::before {
-  content: 'south' / '';
-  font-family: 'Material Symbols Outlined';
-  font-size: 20px;
-}
-
-#sort-btn[data-order="desc"]::before {
-  content: 'north' / '';
 }
 
 .search-results {
