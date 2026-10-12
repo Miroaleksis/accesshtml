@@ -775,13 +775,13 @@ code-editor {
 }
 
 #sort-btn::before {
-  content: 'sort_by_alpha' / '';
+  content: 'south' / '';
   font-family: 'Material Symbols Outlined';
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #sort-btn[data-order="desc"]::before {
-  transform: rotate(180deg);
+  content: 'north' / '';
 }
 
 .search-results {

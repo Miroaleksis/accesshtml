@@ -58,6 +58,7 @@ sortBtn.addEventListener('click', () => {
     a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent));
   if (!ascending) sorted.reverse();
   sorted.forEach(card => grid.appendChild(card));
+  sortBtn.textContent = ascending ? 'Z–A' : 'A–Z';
   sortBtn.setAttribute('aria-label', ascending ? 'Sort Z–A' : 'Sort A–Z');
   sortBtn.dataset.order = ascending ? 'asc' : 'desc';
 });
