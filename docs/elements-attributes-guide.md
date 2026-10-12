@@ -21,7 +21,7 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 ### 1.2. Parent and child items
 
 1.2.1. **Exception to 1.1:** an item that is nested inside another is listed directly after its parent, in hierarchy order. The position of the parent follows the default order (1.1).
-   > `table`, `rowgroup`, `row`, `cell` are listed together under `table`, even though `row` and `cell` would otherwise sort elsewhere.
+   > `table`, `row` and its children `cell`, `columnheader`, `rowheader` are listed together under `table`, even though `row` and `cell` would otherwise sort elsewhere.
 1.2.2. Children follow the order in which they appear in the markup when that order is fixed, and alphabetical order otherwise.
    > `caption`, `thead`, `tbody`, `tfoot` (the order they appear inside `table`)
 1.2.3. Items that are only related to each other but not nested, such as `tab` and `tabpanel`, are not grouped, and follow the default order (1.1).

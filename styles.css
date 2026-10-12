@@ -810,16 +810,25 @@ code-editor {
   vertical-align: top;
 }
 
-.table td[data-level="1"] {
+.table td[data-level="2"] {
   padding-left: 30px;
 }
 
-.table td[data-level="2"] {
+.table td[data-level="3"] {
   padding-left: 44px;
 }
 
-.table td[data-level="3"] {
-  padding-left: 58px;
+.table td[data-level]::before {
+  content: 'subdirectory_arrow_right' / '';
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0;
+  color: var(--color-400);
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
 .table th {
