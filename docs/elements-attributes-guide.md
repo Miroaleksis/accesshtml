@@ -18,12 +18,13 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 1.1.1. Rows are in alphabetical order within a category or group. The roles table is ordered by role, and the states and properties tables by ARIA name.
 1.1.2. Rows that have no role or no ARIA name come last in the category or group, in alphabetical order by native element.
 
-### 1.2. Related items
+### 1.2. Parent and child items
 
-1.2.1. **Exception to 1.1:** items that depend on each other are listed in sequence in hierarchy order, with the parent first. The position of the parent follows the default order (1.1), and the children follow it directly.
+1.2.1. **Exception to 1.1:** an item that is nested inside another is listed directly after its parent, in hierarchy order. The position of the parent follows the default order (1.1).
    > `table`, `rowgroup`, `row`, `cell` are listed together under `table`, even though `row` and `cell` would otherwise sort elsewhere.
-1.2.2. Children are in logical order when one exists, and in alphabetical order otherwise.
-   > `tablist`, then `tab`, then `tabpanel`.
+1.2.2. Children follow the order in which they appear in the markup when that order is fixed, and alphabetical order otherwise.
+   > `caption`, `thead`, `tbody`, `tfoot` (the order they appear inside `table`)
+1.2.3. Items that are only related to each other but not nested, such as `tab` and `tabpanel`, are not grouped, and follow the default order (1.1).
 
 ---
 
@@ -31,15 +32,14 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 
 ### 2.1. Slash
 
-2.1.1. Use `/` only between alternatives that are almost identical, such as two names for the same thing or interchangeable elements. Do not use a comma for this.
-   > `<ul> / <ol>`, `<thead> / <tbody> / <tfoot>`, `presentation / none`
-2.1.2. Do not use `/` or `>` to show that items depend on each other. A slash does not show hierarchy (see 2.2).
+2.1.1. Use `/` only between alternatives that are almost identical, such as two names for the same thing, interchangeable elements or closely related variants of the same role. Do not use a comma for this.
+   > `<ul> / <ol>`, `<thead> / <tbody> / <tfoot>`, `presentation / none`, `menu / menubar`
+2.1.2. Do not use `/` or `>` to show that items are nested. A slash does not show hierarchy (see 2.2).
 
-### 2.2. Dependent items
+### 2.2. Showing the hierarchy
 
-2.2.1. Items that depend on each other each get their own row, in hierarchy order (1.2), and the rows are indented by level to show the hierarchy.
-   > `<fieldset>` on its own row, with `<legend>` indented below it.
-2.2.2. This is currently applied in the Navigation category only, and will be extended to the other categories after evaluation.
+2.2.1. The role cell of a child is indented one level per generation.
+   > `tab` is indented below `tablist`.
 
 ### 2.3. Naming the parent
 

@@ -810,6 +810,14 @@ code-editor {
   vertical-align: top;
 }
 
+.table tr[data-level="1"] > td:nth-child(2) {
+  padding-left: 32px;
+}
+
+.table tr[data-level="2"] > td:nth-child(2) {
+  padding-left: 48px;
+}
+
 .table th {
   font-weight: 700;
   color: var(--color-0);
