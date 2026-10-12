@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Statement | AccessHTML.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/Favicon.png" type="image/png" sizes="48x48">
+</head>
+<body>
+
+  <site-header></site-header>
+
+  <div class="page-inner">
+
+    <on-this-page></on-this-page>
+
+    <main class="page-content" id="main-content" tabindex="-1">
+
+      <div class="page-description">
+        <h1>Accessibility Statement</h1>
+        <p>The purpose of this accessibility statement is to describe the accessibility status of AccessHTML.com and its contents. The statement outlines the known issues in the accessibility of the service and provides instructions on how to send us feedback or improvement suggestions. The description of the site's accessibility is based on self-assessment of an accessibility specialist and peer reviews.</p>
+        <h2>Accessibility status</h2>
+        <p>The service fully complies with the accessibility requirements set out in the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA.</p>
+        <h2>Non-accessible content</h2>
+        <p>The website does not claim conformance with WCAG 2.2 Level AAA, so some content may not meet its requirements.</p>
+        <p>A note about the use of ARIA: the lists of accessibility features use <code>aria-description</code> to communicate whether a feature is required or recommended. The attribute is not yet supported by all assistive technologies.</p>
+        <h2>Embedded and special content</h2>
+        <p>The pattern pages contain code examples that demonstrate accessible HTML. The examples are part of the website and are assessed together with its other content.</p>
+        <h2>Did you notice an accessibility issue?</h2>
+        <p>The feedback form is coming soon.</p>
+        <form class="feedback-form">
+          <fieldset disabled>
+            <legend>Accessibility feedback</legend>
+            <div class="form-field">
+              <label for="feedback-page">Where did you notice the issue?</label>
+              <input type="text" id="feedback-page" aria-describedby="feedback-page-hint">
+              <p class="form-hint" id="feedback-page-hint">For example a page address or the name of a pattern.</p>
+            </div>
+            <div class="form-field">
+              <label for="feedback-description">Describe the issue (required)</label>
+              <textarea id="feedback-description" rows="5" required aria-describedby="feedback-description-hint"></textarea>
+              <p class="form-hint" id="feedback-description-hint">Describe the issue as precisely as possible.</p>
+            </div>
+            <div class="form-field">
+              <label for="feedback-email">Your email address</label>
+              <input type="email" id="feedback-email" autocomplete="email" aria-describedby="feedback-email-hint">
+              <p class="form-hint" id="feedback-email-hint">Only needed if you want a reply.</p>
+            </div>
+            <button type="submit" class="button">Send feedback</button>
+          </fieldset>
+        </form>
+        <!-- To be added when the feedback channel has been decided:
+             "Requesting content in an accessible format" -->
+      </div>
+
+    </main>
+
+  </div>
+  <site-footer></site-footer>
+
+  <script src="common.js"></script>
+
+</body>
+</html>

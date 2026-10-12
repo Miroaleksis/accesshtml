@@ -379,7 +379,7 @@ breadcrumb-bar {
   margin-bottom: 24px;
 }
 
-.page-description h2:not(:first-of-type) {
+.page-description h2:not(h1 + h2) {
   margin-top: 24px;
 }
 
@@ -493,7 +493,8 @@ on-this-page {
   margin: 0;
 }
 
-.filter-bar legend {
+.filter-bar legend,
+.feedback-form legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -724,6 +725,55 @@ code-editor {
 .about-illustration {
   width: 360px;
   flex-shrink: 0;
+}
+
+/* ── Feedback form ───────────────────────── */
+
+.feedback-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.feedback-form fieldset:disabled {
+  opacity: 0.6;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 8px 12px;
+  border: 1.5px solid var(--color-400);
+  border-radius: 8px;
+  font: inherit;
+  color: inherit;
+  background: var(--color-0);
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form .form-hint {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-500);
+}
+
+.feedback-form .button {
+  align-self: flex-start;
+}
+
+.feedback-form :disabled {
+  cursor: not-allowed;
 }
 
 /* ── Attributes page ─────────────────────── */

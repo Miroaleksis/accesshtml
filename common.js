@@ -88,7 +88,7 @@ class OnThisPage extends HTMLElement {
 
     const buildList = () => {
       const list = this.querySelector('.on-this-page-links');
-      document.querySelectorAll('.page-section h2').forEach(el => {
+      document.querySelectorAll('.page-section h2, .page-description h2').forEach(el => {
         const text = el.textContent.trim();
         if (!el.id) {
           el.id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
