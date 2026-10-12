@@ -38,8 +38,8 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 
 ### 2.2. Showing the hierarchy
 
-2.2.1. The role cell of a child is indented one level per generation.
-   > `tab` is indented below `tablist`.
+2.2.1. The cells that name a child are indented one level per generation. These are the native cell and the role cell, except for a cell that holds only a dash.
+   > `<option>` and `option` are indented below `<select>` and `listbox`, `tab` is indented below `tablist`, and `<legend>` is indented below `<fieldset>`.
 
 ### 2.3. Naming the parent
 

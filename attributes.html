@@ -37,7 +37,7 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-roles">
-              <button class="category-btn" aria-expanded="false">Roles</button>
+              <button class="category-btn" aria-expanded="true">Roles</button>
             </h2>
             <button class="tooltip-btn" aria-label="About Roles" aria-expanded="false"></button>
           </div>
@@ -53,7 +53,7 @@
           </thead>
           <tbody class="table-group group--category-1">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="false">Navigation</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Navigation</button></th>
             </tr>
             <tr>
               <td><code>&lt;a&gt;</code></td>
@@ -65,9 +65,9 @@
               <td><code>menu</code> / <code>menubar</code></td>
               <td>A list of choices or commands, as in an application. A menu is typically opened from a button, while a menubar stays visible and is usually presented horizontally. Not to be confused with a navigation menu, which typically uses a <code>&lt;nav&gt;</code> landmark with links.</td>
             </tr>
-            <tr data-level="1">
+            <tr>
               <td>—</td>
-              <td><code>menuitem</code></td>
+              <td data-level="1"><code>menuitem</code></td>
               <td>An individual option or command within a menu or menubar. Not to be confused with a link in a navigation menu.</td>
             </tr>
             <tr>
@@ -80,9 +80,9 @@
               <td><code>tablist</code></td>
               <td>A container for a set of tab elements.</td>
             </tr>
-            <tr data-level="1">
+            <tr>
               <td>—</td>
-              <td><code>tab</code></td>
+              <td data-level="1"><code>tab</code></td>
               <td>An interactive element in a tablist that controls the visibility of its associated tabpanel.</td>
             </tr>
             <tr>
@@ -93,7 +93,7 @@
           </tbody>
           <tbody class="table-group group--category-2">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="false">Function/Input</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Function/Input</button></th>
             </tr>
             <tr>
               <td><code>&lt;button&gt;</code></td>
@@ -111,9 +111,14 @@
               <td>An input control that displays a dropdown list of options.</td>
             </tr>
             <tr>
-              <td><code>&lt;select&gt;</code> / <code>&lt;option&gt;</code></td>
-              <td><code>listbox</code> / <code>option</code></td>
-              <td>A list of options from which the user can select one or more items. Each <code>&lt;option&gt;</code> represents a selectable item within the list.</td>
+              <td><code>&lt;select&gt;</code></td>
+              <td><code>listbox</code></td>
+              <td>A list of options from which the user can select one or more items.</td>
+            </tr>
+            <tr>
+              <td data-level="1"><code>&lt;option&gt;</code></td>
+              <td data-level="1"><code>option</code></td>
+              <td>A selectable item within a listbox.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="radio"&gt;</code></td>
@@ -146,34 +151,9 @@
               <td>A color picker that lets users select a color value.</td>
             </tr>
             <tr>
-              <td><code>&lt;input type="email"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for email addresses. The browser validates the format on submit and triggers an email-optimised keyboard on mobile devices.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="password"&gt;</code></td>
-              <td>—</td>
-              <td>A text input that masks the entered characters for sensitive data such as passwords.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="tel"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for telephone numbers. Triggers a numeric keyboard on mobile devices.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="url"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for URLs. The browser validates the format on submit and triggers a URL-optimised keyboard on mobile devices.</td>
-            </tr>
-            <tr>
               <td><code>&lt;input type="date"&gt;</code></td>
               <td>—</td>
               <td>A date picker that lets users select a date.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="time"&gt;</code></td>
-              <td>—</td>
-              <td>A time picker that lets users select a time of day.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="datetime-local"&gt;</code></td>
@@ -181,14 +161,9 @@
               <td>A combined date and time picker with no timezone information.</td>
             </tr>
             <tr>
-              <td><code>&lt;input type="month"&gt;</code></td>
+              <td><code>&lt;input type="email"&gt;</code></td>
               <td>—</td>
-              <td>A picker that lets users select a year and month.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="week"&gt;</code></td>
-              <td>—</td>
-              <td>A picker that lets users select a year and week number.</td>
+              <td>A text input for email addresses. The browser validates the format on submit and triggers an email-optimised keyboard on mobile devices.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="file"&gt;</code></td>
@@ -201,9 +176,19 @@
               <td>A non-visible input that submits data with the form without user interaction. Not exposed to assistive technologies.</td>
             </tr>
             <tr>
-              <td><code>&lt;input type="submit"&gt;</code></td>
+              <td><code>&lt;input type="image"&gt;</code></td>
               <td>—</td>
-              <td>A button that submits the form. Prefer <code>&lt;button type="submit"&gt;</code> as it allows richer content and styling.</td>
+              <td>A graphical submit button rendered as an image. Requires an <code>alt</code> attribute for accessibility.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="month"&gt;</code></td>
+              <td>—</td>
+              <td>A picker that lets users select a year and month.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="password"&gt;</code></td>
+              <td>—</td>
+              <td>A text input that masks the entered characters for sensitive data such as passwords.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="reset"&gt;</code></td>
@@ -211,9 +196,29 @@
               <td>A button that resets all form fields to their default values.</td>
             </tr>
             <tr>
-              <td><code>&lt;input type="image"&gt;</code></td>
+              <td><code>&lt;input type="submit"&gt;</code></td>
               <td>—</td>
-              <td>A graphical submit button rendered as an image. Requires an <code>alt</code> attribute for accessibility.</td>
+              <td>A button that submits the form. Prefer <code>&lt;button type="submit"&gt;</code> as it allows richer content and styling.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="tel"&gt;</code></td>
+              <td>—</td>
+              <td>A text input for telephone numbers. Triggers a numeric keyboard on mobile devices.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="time"&gt;</code></td>
+              <td>—</td>
+              <td>A time picker that lets users select a time of day.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="url"&gt;</code></td>
+              <td>—</td>
+              <td>A text input for URLs. The browser validates the format on submit and triggers a URL-optimised keyboard on mobile devices.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;input type="week"&gt;</code></td>
+              <td>—</td>
+              <td>A picker that lets users select a year and week number.</td>
             </tr>
             <tr>
               <td><code>&lt;label&gt;</code></td>
@@ -223,22 +228,12 @@
           </tbody>
           <tbody class="table-group group--category-3">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="false">Structure/Layout</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Structure/Layout</button></th>
             </tr>
             <tr>
               <td><code>&lt;header&gt;</code></td>
               <td><code>banner</code></td>
               <td>A header region for the page or its nearest sectioning ancestor, such as an <code>&lt;article&gt;</code>.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;td&gt;</code></td>
-              <td><code>cell</code></td>
-              <td>A data cell within a table row.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;th&gt;</code></td>
-              <td><code>columnheader</code></td>
-              <td>A header cell for a column in a table.</td>
             </tr>
             <tr>
               <td><code>&lt;aside&gt;</code></td>
@@ -248,21 +243,26 @@
             <tr>
               <td><code>&lt;footer&gt;</code></td>
               <td><code>contentinfo</code></td>
-              <td>A footer region region for the page or its nearest sectioning ancestor, such as an <code>&lt;article&gt;</code>.</td>
+              <td>A footer region for the page or its nearest sectioning ancestor, such as an <code>&lt;article&gt;</code>.</td>
             </tr>
             <tr>
-              <td><code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code></td>
+              <td><code>&lt;fieldset&gt;</code></td>
               <td><code>group</code></td>
-              <td>A container that groups related form controls. The <code>&lt;legend&gt;</code> provides a caption for the group.</td>
+              <td>A container that groups related form controls.</td>
             </tr>
             <tr>
-              <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code></td>
+              <td data-level="1"><code>&lt;legend&gt;</code></td>
+              <td>—</td>
+              <td>A caption that labels the group formed by a fieldset.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code></td>
               <td><code>list</code></td>
               <td>A list of items.</td>
             </tr>
             <tr>
-              <td><code>&lt;li&gt;</code></td>
-              <td><code>listitem</code></td>
+              <td data-level="1"><code>&lt;li&gt;</code></td>
+              <td data-level="1"><code>listitem</code></td>
               <td>A single item within a list.</td>
             </tr>
             <tr>
@@ -286,34 +286,49 @@
               <td>A named section of a page. Only exposed as a landmark when it has an accessible name.</td>
             </tr>
             <tr>
-              <td><code>&lt;tr&gt;</code></td>
-              <td><code>row</code></td>
-              <td>A row of cells within a table or grid.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></td>
-              <td><code>rowgroup</code></td>
-              <td>A group of rows within a table.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;th scope="row"&gt;</code></td>
-              <td><code>rowheader</code></td>
-              <td>A header cell for a row in a table.</td>
-            </tr>
-            <tr>
               <td><code>&lt;table&gt;</code></td>
               <td><code>table</code></td>
               <td>A grid of data arranged in rows and columns.</td>
             </tr>
             <tr>
-              <td><code>&lt;details&gt;</code> / <code>&lt;summary&gt;</code></td>
+              <td data-level="1"><code>&lt;thead&gt;</code> / <code>&lt;tbody&gt;</code> / <code>&lt;tfoot&gt;</code></td>
+              <td data-level="1"><code>rowgroup</code></td>
+              <td>A group of rows within a table.</td>
+            </tr>
+            <tr>
+              <td data-level="2"><code>&lt;tr&gt;</code></td>
+              <td data-level="2"><code>row</code></td>
+              <td>A row of cells within a table or grid.</td>
+            </tr>
+            <tr>
+              <td data-level="3"><code>&lt;td&gt;</code></td>
+              <td data-level="3"><code>cell</code></td>
+              <td>A data cell within a table row.</td>
+            </tr>
+            <tr>
+              <td data-level="3"><code>&lt;th&gt;</code></td>
+              <td data-level="3"><code>columnheader</code></td>
+              <td>A header cell for a column in a table.</td>
+            </tr>
+            <tr>
+              <td data-level="3"><code>&lt;th scope="row"&gt;</code></td>
+              <td data-level="3"><code>rowheader</code></td>
+              <td>A header cell for a row in a table.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;details&gt;</code></td>
               <td>—</td>
-              <td>A native accordion widget that expands and collapses content. The <code>&lt;summary&gt;</code> acts as the visible toggle.</td>
+              <td>A native accordion widget that expands and collapses content.</td>
+            </tr>
+            <tr>
+              <td data-level="1"><code>&lt;summary&gt;</code></td>
+              <td>—</td>
+              <td>The visible toggle of a details element.</td>
             </tr>
           </tbody>
           <tbody class="table-group group--category-4">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="false">Status/Info</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Status/Info</button></th>
             </tr>
             <tr>
               <td>—</td>
@@ -350,7 +365,7 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-states-properties">
-              <button class="category-btn" aria-expanded="false">States and Properties</button>
+              <button class="category-btn" aria-expanded="true">States and Properties</button>
             </h2>
             <button class="tooltip-btn" aria-label="About States and Properties" aria-expanded="false"></button>
           </div>
@@ -367,7 +382,7 @@
           </thead>
           <tbody class="table-group">
             <tr>
-              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="false">States</button></th>
+              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="true">States</button></th>
             </tr>
             <tr>
               <td><code>checked</code></td>
@@ -420,7 +435,7 @@
           </tbody>
           <tbody class="table-group">
             <tr>
-              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="false">Properties</button></th>
+              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="true">Properties</button></th>
             </tr>
             <tr>
               <td>—</td>
@@ -486,7 +501,7 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-names">
-              <button class="category-btn" aria-expanded="false">Names and Descriptions</button>
+              <button class="category-btn" aria-expanded="true">Names and Descriptions</button>
             </h2>
             <button class="tooltip-btn" aria-label="About Names and Descriptions" aria-expanded="false"></button>
           </div>
@@ -526,7 +541,7 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-references">
-              <button class="category-btn" aria-expanded="false">References</button>
+              <button class="category-btn" aria-expanded="true">References</button>
             </h2>
             <button class="tooltip-btn" aria-label="About References" aria-expanded="false"></button>
           </div>

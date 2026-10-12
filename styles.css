@@ -810,12 +810,16 @@ code-editor {
   vertical-align: top;
 }
 
-.table tr[data-level="1"] > td:nth-child(2) {
-  padding-left: 32px;
+.table td[data-level="1"] {
+  padding-left: 30px;
 }
 
-.table tr[data-level="2"] > td:nth-child(2) {
-  padding-left: 48px;
+.table td[data-level="2"] {
+  padding-left: 44px;
+}
+
+.table td[data-level="3"] {
+  padding-left: 58px;
 }
 
 .table th {
