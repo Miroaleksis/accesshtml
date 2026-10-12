@@ -119,6 +119,9 @@ class SiteFooter extends HTMLElement {
         <a href="index.html" class="site-logo">
           <img src="images/Logo.svg" alt="AccessHTML.com">
         </a>
+        <nav aria-label="Footer menu">
+          <a href="accessibility-statement.html">Accessibility statement</a>
+        </nav>
         <p class="site-footer-copyright">© 2026</p>
       </footer>
     `;
