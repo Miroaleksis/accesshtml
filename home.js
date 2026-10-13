@@ -3,6 +3,11 @@ const search = document.getElementById('pattern-search');
 const searchResults = document.getElementById('home-search-results');
 let appliedQuery = '';
 
+function resultsText(count) {
+  if (count === 0) return 'No results found';
+  return `${count} ${count === 1 ? 'result' : 'results'} found`;
+}
+
 function applyFilters() {
   const category = document.querySelector('.filter-bar input:checked').value;
   let visible = 0;
@@ -15,7 +20,7 @@ function applyFilters() {
     if (!card.hidden) visible++;
   });
 
-  searchResults.textContent = appliedQuery ? visible + ' results' : '';
+  searchResults.textContent = appliedQuery ? resultsText(visible) : '';
 }
 
 function performSearch() {

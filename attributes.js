@@ -29,6 +29,11 @@ document.addEventListener('click', e => {
 const searchInput = document.getElementById('attr-search-input');
 const searchResults = document.getElementById('attr-search-results');
 
+function resultsText(count) {
+  if (count === 0) return 'No results found';
+  return `${count} ${count === 1 ? 'result' : 'results'} found`;
+}
+
 function closeAll() {
   document.querySelectorAll('.category-btn').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
   document.querySelectorAll('.table-group-btn').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
@@ -69,7 +74,7 @@ function performSearch() {
     openMatchingAccordions();
     const count = [...document.querySelectorAll('.table tbody tr:has(td)')].filter(row => !row.hidden).length;
 
-    searchResults.textContent = count + ' results';
+    searchResults.textContent = resultsText(count);
   } else {
     searchResults.textContent = '';
   }
