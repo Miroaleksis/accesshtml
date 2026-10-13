@@ -6,7 +6,7 @@ Rules for the "Accessibility Features" list items (`<li aria-description="Requir
 
 ## Why these rules exist
 
-1. Consistent wording lets a reader build one mental model of the site's terminology instead of re-learning slightly different phrasing on every page. If the same ARIA relationship is worded differently from page to page, the reader can no longer recognise it as the same recurring pattern.
+1. Consistent wording lets a reader build one mental model of the site's terminology instead of re-learning slightly different phrasing on every page. If the same ARIA relationship is worded differently from page to page, the reader can no longer recognize it as the same recurring pattern.
 2. This site is itself an accessibility guide, so its own language is part of what it teaches. Using precise, correct terminology (e.g. "accessible name" vs. "label") models the vocabulary developers need when they go on to read official specs or communicate with other developers.
 3. A predictable sentence structure lets a reader tell what kind of requirement they're looking at from its grammar alone (a single named mechanism, a choice between two approaches, or an open-ended requirement) before they've even finished parsing the content.
 
@@ -138,7 +138,7 @@ Use correct, idiomatic UI and development terminology for elements and functiona
 
    This extends the screen-readers-before-keyboard principle (1.3.2) from word order within a sentence to item order across the whole list.
    > `role="tablist"` → `role="tab"`/`aria-selected` → `role="tabpanel"` → `tabindex="-1"` → arrow keys → mobile scaling → (Recommended) `aria-controls`.
-   > cards.html: auto-scroll-into-view on focus (keyboard/screen reader) and card/CTA labelling (ARIA) come before the left/right navigation buttons item, since those buttons only serve pointer users.
+   > cards.html: auto-scroll-into-view on focus (keyboard/screen reader) and card/CTA labeling (ARIA) come before the left/right navigation buttons item, since those buttons only serve pointer users.
    > multiselect.html: all `<output>`-related ARIA items come before the Space/Enter keyboard item, even though `<output>` appears later in the DOM than the listbox Space/Enter acts on.
 
 ### 4.4. DOM hierarchy

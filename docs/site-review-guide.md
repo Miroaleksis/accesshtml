@@ -30,6 +30,7 @@ Check that the page text is well-written and consistent across the site.
   - Article usage (a/an/the)
   - Preposition usage (in/on/at/for/by, etc.)
   - Comma and other punctuation usage
+- Spelling is American English throughout (e.g. behavior, color, organize, optimized)
 - Descriptions are concise and informative, not too long, not too vague
 - Text avoids AI-sounding or overly sophisticated sentence constructions. In particular, no em dashes unless strictly necessary, no semicolons, and no other similarly "polished" punctuation or phrasing that reads as machine-generated rather than plain human technical writing
 - Page titles, h1s, and descriptions are aligned in meaning

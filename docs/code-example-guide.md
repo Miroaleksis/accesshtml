@@ -47,4 +47,4 @@ This document defines the rules for CSS/HTML/JS in the site's code examples (the
 ## 4. Code quality and consistency
 
 4.1. Every CSS rule, JS function/branch, and HTML element must serve a purpose. Remove unused selectors, unreachable code paths, and markup that nothing references.
-4.2. When a pattern has closely related variants, or when two different patterns work on the same underlying principle, their HTML structure and JS logic must follow the same approach consistently. A developer reading two such examples should recognise the same technique and be able to transfer understanding between them.
+4.2. When a pattern has closely related variants, or when two different patterns work on the same underlying principle, their HTML structure and JS logic must follow the same approach consistently. A developer reading two such examples should recognize the same technique and be able to transfer understanding between them.
