@@ -35,7 +35,7 @@
         <ul class="feature-list">
           <li aria-description="Required">A multiselect combobox has a similar structure and keyboard behaviour as the <a href="select-only.html#custom-select-only">custom select-only combobox</a> with a few exceptions:</li>
           <li aria-description="Required"><code>aria-multiselectable="true"</code> on the listbox communicates that multiple options can be selected.</li>
-          <li aria-description="Required">An <code>&lt;output&gt;</code> element announces the number of selected options to screen readers. <code>aria-describedby</code> associates the output with the input.</li>
+          <li aria-description="Required">An <code>&lt;output&gt;</code> element announces the number and names of the selected options to screen readers. <code>aria-describedby</code> associates the output with the input.</li>
           <li aria-description="Required">Selected options are rendered as <code>&lt;button&gt;</code> elements, making them individually focusable and removable via keyboard. <code>aria-label="Remove [option]"</code> communicates the purpose and action to screen readers.</li>
           <li aria-description="Required"><kbd>Space</kbd> and <kbd>Enter</kbd> toggle selection of the focused option without closing the dropdown.</li>
           <li aria-description="Recommended">Pressing <kbd>Backspace</kbd> removes the last selected option.</li>
@@ -268,7 +268,8 @@ document.querySelectorAll('.multiselect').forEach(container => {
     container.querySelectorAll('.ms-tag').forEach(tag => tag.remove());
     const selected = options.filter(o => o.getAttribute('aria-selected') === 'true');
     const counter = container.querySelector('.ms-counter');
-    counter.textContent = `${selected.length} selected`;
+    const names = selected.map(o => o.textContent).join(', ');
+    counter.textContent = selected.length ? `${selected.length} selected: ${names}` : '0 selected';
     selected.forEach(option => {
       const index = options.indexOf(option);
       const tag = document.createElement('button');

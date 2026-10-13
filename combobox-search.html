@@ -63,7 +63,7 @@
   <script type="text/plain" id="snippet-a-html">
 <label for="cs-trigger" class="cs-label">Country</label>
 <div class="combobox-search">
-  <input id="cs-trigger" type="text" role="combobox" autocomplete="off" aria-expanded="false" aria-activedescendant="" aria-autocomplete="list" aria-controls="cs-listbox" placeholder="Select a country">
+  <input id="cs-trigger" type="text" role="combobox" aria-haspopup="listbox" autocomplete="off" aria-expanded="false" aria-activedescendant="" aria-autocomplete="list" aria-controls="cs-listbox" placeholder="Select a country">
   <ul role="listbox" id="cs-listbox" tabindex="-1">
     <li role="option" id="cs-opt-1" aria-selected="false">Austria</li>
     <li role="option" id="cs-opt-2" aria-selected="false">Belgium</li>
@@ -335,7 +335,7 @@ document.querySelectorAll('.combobox-search').forEach(container => {
   <script type="text/plain" id="snippet-b-html">
 <label for="csm-trigger" class="csm-label">Country</label>
 <div class="combobox-search-multi">
-  <input id="csm-trigger" type="text" role="combobox" autocomplete="off" aria-expanded="false" aria-activedescendant="" aria-autocomplete="list" aria-controls="csm-listbox" aria-describedby="csm-counter">
+  <input id="csm-trigger" type="text" role="combobox" aria-haspopup="listbox" autocomplete="off" aria-expanded="false" aria-activedescendant="" aria-autocomplete="list" aria-controls="csm-listbox" aria-describedby="csm-counter">
   <ul role="listbox" id="csm-listbox" aria-multiselectable="true" tabindex="-1">
     <li role="option" id="csm-opt-1" aria-selected="false">Austria</li>
     <li role="option" id="csm-opt-2" aria-selected="false">Belgium</li>
@@ -583,7 +583,8 @@ document.querySelectorAll('.combobox-search-multi').forEach(container => {
     container.querySelectorAll('.csm-tag').forEach(tag => tag.remove());
     const selected = options.filter(o => o.getAttribute('aria-selected') === 'true');
     const counter = container.querySelector('.csm-counter');
-    counter.textContent = `${selected.length} selected`;
+    const names = selected.map(o => o.textContent).join(', ');
+    counter.textContent = selected.length ? `${selected.length} selected: ${names}` : '0 selected';
     selected.forEach(option => {
       const index = options.indexOf(option);
       const tag = document.createElement('button');
