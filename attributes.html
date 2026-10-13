@@ -61,16 +61,6 @@
               <td>A navigable hyperlink.</td>
             </tr>
             <tr>
-              <td>—</td>
-              <td><code>menu</code> / <code>menubar</code></td>
-              <td>A list of choices or commands, as in an application. A menu is typically opened from a button, while a menubar stays visible and is usually presented horizontally. Not to be confused with a navigation menu, which typically uses a <code>&lt;nav&gt;</code> landmark with links.</td>
-            </tr>
-            <tr>
-              <td>—</td>
-              <td data-level="1"><code>menuitem</code></td>
-              <td>An individual option or command within a menu or menubar. Not to be confused with a link in a navigation menu.</td>
-            </tr>
-            <tr>
               <td><code>&lt;nav&gt;</code></td>
               <td><code>navigation</code></td>
               <td>A set of navigation links.</td>
@@ -106,19 +96,34 @@
               <td>A control with three possible states: checked, unchecked, or mixed.</td>
             </tr>
             <tr>
-              <td>—</td>
+              <td><code>&lt;select&gt;</code></td>
               <td><code>combobox</code></td>
-              <td>An input control that displays a dropdown list of options.</td>
+              <td>An input control that displays a dropdown list of options. A <code>&lt;select&gt;</code> is rendered as a dropdown and has this role built in, unless it has the <code>multiple</code> attribute or a <code>size</code> attribute greater than 1.</td>
             </tr>
             <tr>
-              <td><code>&lt;select&gt;</code></td>
+              <td><code>&lt;select&gt;</code> with <code>size</code> greater than 1</td>
               <td><code>listbox</code></td>
-              <td>A list of options from which the user can select one or more items.</td>
+              <td>A list of options from which the user can select one item.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;select multiple&gt;</code></td>
+              <td><code>listbox</code> with <code>aria-multiselectable="true"</code></td>
+              <td>A list of options from which the user can select several items. The multiselectable property is built in, whereas a custom <code>role="listbox"</code> element needs <code>aria-multiselectable="true"</code> to communicate it.</td>
             </tr>
             <tr>
               <td data-level="1"><code>&lt;option&gt;</code></td>
               <td data-level="1"><code>option</code></td>
-              <td>A selectable item within a listbox.</td>
+              <td>A selectable item within a listbox or a combobox.</td>
+            </tr>
+            <tr>
+              <td>—</td>
+              <td><code>menu</code> / <code>menubar</code></td>
+              <td>A list of choices or commands, as in an application. A menu is typically opened from a button, while a menubar stays visible and is usually presented horizontally. Not to be confused with a navigation menu, which typically uses a <code>&lt;nav&gt;</code> landmark with links.</td>
+            </tr>
+            <tr>
+              <td>—</td>
+              <td data-level="1"><code>menuitem</code></td>
+              <td>An individual option or command within a menu or menubar. Not to be confused with a link in a navigation menu.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="radio"&gt;</code></td>
@@ -146,6 +151,16 @@
               <td>A toggle button representing an on/off state, similar to a checkbox but with binary semantics.</td>
             </tr>
             <tr>
+              <td><code>&lt;input type="text"&gt;</code> / <code>&lt;input type="email"&gt;</code> / <code>&lt;input type="tel"&gt;</code> / <code>&lt;input type="url"&gt;</code></td>
+              <td><code>textbox</code></td>
+              <td>A control for entering a single line of text. The <code>email</code>, <code>tel</code> and <code>url</code> types are meant for specific kinds of values: the browser can validate the format on submit and trigger an optimised keyboard on mobile devices.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;textarea&gt;</code></td>
+              <td><code>textbox</code> with <code>aria-multiline="true"</code></td>
+              <td>A control for entering multiple lines of text. In the <code>&lt;textarea&gt;</code> element, the multiline property is built in, whereas a custom <code>role="textbox"</code> element needs <code>aria-multiline="true"</code> to communicate it.</td>
+            </tr>
+            <tr>
               <td><code>&lt;input type="color"&gt;</code></td>
               <td>—</td>
               <td>A color picker that lets users select a color value.</td>
@@ -159,11 +174,6 @@
               <td><code>&lt;input type="datetime-local"&gt;</code></td>
               <td>—</td>
               <td>A combined date and time picker with no timezone information.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="email"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for email addresses. The browser validates the format on submit and triggers an email-optimised keyboard on mobile devices.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="file"&gt;</code></td>
@@ -201,19 +211,9 @@
               <td>A button that submits the form. Prefer <code>&lt;button type="submit"&gt;</code> as it allows richer content and styling.</td>
             </tr>
             <tr>
-              <td><code>&lt;input type="tel"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for telephone numbers. Triggers a numeric keyboard on mobile devices.</td>
-            </tr>
-            <tr>
               <td><code>&lt;input type="time"&gt;</code></td>
               <td>—</td>
               <td>A time picker that lets users select a time of day.</td>
-            </tr>
-            <tr>
-              <td><code>&lt;input type="url"&gt;</code></td>
-              <td>—</td>
-              <td>A text input for URLs. The browser validates the format on submit and triggers a URL-optimised keyboard on mobile devices.</td>
             </tr>
             <tr>
               <td><code>&lt;input type="week"&gt;</code></td>

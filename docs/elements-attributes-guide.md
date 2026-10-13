@@ -46,6 +46,13 @@ Rules for the rows of the tables on the Elements & Attributes page: the order of
 2.3.1. The description of a child row names its parent, because indentation is only visual and is not conveyed to screen readers.
    > `tab`: An interactive element in a tablist that controls the visibility of its associated tabpanel.
 
+### 2.4. Role with a property
+
+2.4.1. When an element has the same role as another element but its full meaning depends on a property, it gets its own row, and the role cell names the property.
+   > `<textarea>` is listed on its own row as `textbox` with `aria-multiline="true"`, separate from the single-line `<input>` types, which are `textbox`.
+2.4.2. The description of such a row states whether the property is built in or has to be set.
+   > The multiline property is built in, whereas a custom `role="textbox"` element needs `aria-multiline="true"` to communicate it.
+
 ---
 
 ## 3. Descriptions
