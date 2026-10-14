@@ -23,6 +23,7 @@
       <div class="page-description">
         <h1>Checkbox</h1>
         <p>A checkbox allows users to select or deselect a predefined option independently. It can also be applied to create an on/off switch.</p>
+        <p>Related checkboxes are often placed in an input group (<a href="input-group.html">See the Input Group page for more information</a>). A checkbox that controls a group of other checkboxes shows a mixed state when some but not all of them are checked.</p>
       </div>
 
       <section class="page-section">
@@ -33,6 +34,8 @@
         </div>
         <ul class="feature-list">
           <li aria-description="Required"><code>type="checkbox"</code> provides the checkbox role and behavior as well as communicates the checked state.</li>
+          <li aria-description="Required"><code>indeterminate</code> on a checkbox communicates the mixed state to screen readers.</li>
+          <li aria-description="Recommended"><code>aria-controls</code> on the parent checkbox points to the checkboxes it controls.</li>
         </ul>
       </section>
 
@@ -41,12 +44,16 @@
         <h3>Example</h3>
         <div class="example-container" data-prefix="a"></div>
         <h3>Code Snippet</h3>
-        <code-editor prefix="a" tabs="html,css"></code-editor>
+        <code-editor prefix="a" tabs="html,css,js"></code-editor>
       </section>
 
       <section class="page-section">
         <h2>Switch</h2>
-        <p>A switch is a binary toggle that turns a setting on or off and shares the same underlying <code>&lt;input&gt;</code> element as a checkbox. <code>role="switch"</code> overrides the implicit checkbox role to communicate this on/off nature to screen readers. The native checkbox is visually hidden but remains in the accessibility tree so focus and state are handled by the browser.</p>
+        <p>A switch is a binary toggle that turns a setting on or off and shares the same underlying <code>&lt;input&gt;</code> element as a checkbox. The native checkbox is usually visually hidden, and the visual appearance of the switch is implemented manually.</p>
+        <ul class="feature-list">
+          <li aria-description="Required">The native checkbox must remain in the accessibility tree and keep a visible keyboard focus indicator, even when it is visually hidden.</li>
+          <li aria-description="Required"><code>role="switch"</code> identifies the control as an on/off switch and overrides the implicit checkbox role.</li>
+        </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>
         <h3>Code Snippet</h3>
@@ -58,10 +65,25 @@
   </div>
 
   <script type="text/plain" id="snippet-a-html">
-<label class="checkbox-label">
-  <input type="checkbox">
-  I accept the terms and conditions
-</label>
+<fieldset class="checkbox-group">
+  <legend>Notification channels</legend>
+  <label class="checkbox-label">
+    <input type="checkbox" aria-controls="channel-email channel-sms channel-push">
+    Select all
+  </label>
+  <label class="checkbox-label checkbox-child">
+    <input type="checkbox" id="channel-email" name="channel" value="email">
+    Email
+  </label>
+  <label class="checkbox-label checkbox-child">
+    <input type="checkbox" id="channel-sms" name="channel" value="sms">
+    SMS
+  </label>
+  <label class="checkbox-label checkbox-child">
+    <input type="checkbox" id="channel-push" name="channel" value="push">
+    Push notification
+  </label>
+</fieldset>
   </script>
 
   <script type="text/plain" id="snippet-a-css">
@@ -96,17 +118,67 @@
   background: color-mix(in srgb, whitesmoke 95%, black 5%);
 }
 
-.checkbox-label input:checked::before {
-  content: '\f00c' / '';
+.checkbox-label input:checked::before,
+.checkbox-label input:indeterminate::before {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   font-size: 14px;
 }
+
+.checkbox-label input:checked::before {
+  content: '\f00c' / '';
+}
+
+.checkbox-label input:indeterminate::before {
+  content: '\f068' / '';
+}
+
+.checkbox-group {
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: dimgray;
+}
+
+.checkbox-group legend {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.checkbox-child {
+  margin-left: 16px;
+}
+  </script>
+
+  <script type="text/plain" id="snippet-a-js">
+document.querySelectorAll('.checkbox-group').forEach(group => {
+  const [parent, ...children] = group.querySelectorAll('input');
+
+  parent.addEventListener('change', () => {
+    children.forEach(child => {
+      child.checked = parent.checked;
+    });
+  });
+
+  children.forEach(child => {
+    child.addEventListener('change', () => {
+      const checkedCount = children.filter(c => c.checked).length;
+      parent.checked = checkedCount === children.length;
+      parent.indeterminate = checkedCount > 0 && checkedCount < children.length;
+    });
+  });
+});
   </script>
 
   <script type="text/plain" id="snippet-b-html">
 <label class="switch-label">
-  Dark mode
+  Notifications
   <span class="switch">
     <input type="checkbox" role="switch">
   </span>
