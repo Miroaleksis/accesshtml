@@ -6,7 +6,6 @@
   <title>Text Input | AccessHTML.com</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/Favicon.png" type="image/png" sizes="48x48">
-  <meta name="breadcrumb-parent" content="input-field.html|Input Field">
 </head>
 <body>
 
@@ -32,15 +31,14 @@
           <span class="recommended">= Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">An <code>&lt;input&gt;</code> has a visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Note that multiple <code>&lt;input&gt;</code> elements (or other interactive controls) must not be nested inside a single <code>&lt;label&gt;</code>.</li>
-          <li aria-description="Required"><code>aria-describedby</code> associates help texts, error messages and prefixes/suffixes with the input.</li>
           <li aria-description="Required">Placeholder text must not be used as a substitute for a label as it is not permanent and disappears on input.</li>
         </ul>
       </section>
 
       <section class="page-section">
         <h2>Single-line Text</h2>
-        <p>The native <code>&lt;input type="text"&gt;</code> element should always be used for single-line text, as it provides built-in keyboard support, screen reader announcements and mobile keyboard optimization.</p>
+        <p>The native <code>&lt;input&gt;</code> element should always be used for single-line text, as it provides built-in keyboard support, screen reader announcements and mobile keyboard optimization.</p>
+        <p><code>type="text"</code> provides a field for general text. A field that expects a specific kind of value, such as an email address, telephone number or URL, should use the matching type (<code>email</code>, <code>tel</code> or <code>url</code>). The browser can then validate the format on submit and trigger an optimized keyboard on mobile devices.</p>
         <h3>Example</h3>
         <div class="example-container" data-prefix="a"></div>
         <h3>Code Snippet</h3>
