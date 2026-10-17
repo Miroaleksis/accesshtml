@@ -56,6 +56,7 @@
         <p>A custom implementation may be necessary when the desired visual design cannot be achieved with the native <code>&lt;select&gt;</code> element. It requires explicit attributes to communicate dropdown semantics:</p>
         <ul class="feature-list">
           <li aria-description="Required"><code>role="combobox"</code> identifies the trigger element and <code>aria-expanded</code> communicates its expanded or collapsed state. The trigger element can be, for example, a read-only <code>&lt;input&gt;</code> field or a <code>&lt;button&gt;</code>.</li>
+          <li aria-description="Required"><code>role="listbox"</code> identifies the dropdown list expanded by the trigger.</li>
           <li aria-description="Required"><code>role="option"</code> identifies an option, and <code>aria-selected</code> communicates its selection state.</li>
           <li aria-description="Required"><code>aria-activedescendant</code> on the trigger tracks which option currently has focus.</li>
           <li aria-description="Recommended"><code>aria-haspopup="listbox"</code> communicates that the trigger opens a listbox.</li>
