@@ -65,6 +65,7 @@ button::before,
 button::after,
 .breadcrumb-trail li:not(:last-child)::after,
 .aside-link::after,
+.site-footer-sub a::after,
 .feature-list li::before,
 .feature-list-legend span::before,
 .tag::before,
@@ -360,6 +361,18 @@ site-footer {
 .site-footer-sub {
   border-top: 1.5px solid var(--color-300);
   padding-top: 16px;
+}
+
+.site-footer-sub a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.site-footer-sub a::after {
+  content: 'arrow_upward' / '';
+  font-size: 20px;
 }
 
 /* ── Breadcrumb bar ──────────────────────── */

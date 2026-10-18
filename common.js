@@ -129,8 +129,8 @@ class SiteFooter extends HTMLElement {
                 <li><a href="about.html">About</a></li>
               </ul>
             </nav>
-            <nav aria-labelledby="footer-information">
-              <h2 id="footer-information">Information</h2>
+            <nav aria-labelledby="footer-support">
+              <h2 id="footer-support">Support</h2>
               <ul>
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="accessibility-statement.html">Accessibility statement</a></li>
