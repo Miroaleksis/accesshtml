@@ -122,19 +122,20 @@ class SiteFooter extends HTMLElement {
             <img src="images/Logo.svg" alt="AccessHTML.com">
           </a>
           <div class="site-footer-links">
-            <nav aria-labelledby="footer-explore">
-              <h2 id="footer-explore">Explore</h2>
+            <nav aria-labelledby="footer-nav-1-heading">
+              <h2 id="footer-nav-1-heading">Library</h2>
               <ul>
                 <li><a href="index.html">Patterns</a></li>
                 <li><a href="attributes.html">Elements & Attributes</a></li>
                 <li><a href="about.html">About</a></li>
               </ul>
             </nav>
-            <nav aria-labelledby="footer-support">
-              <h2 id="footer-support">Support</h2>
+            <nav aria-labelledby="footer-nav-2-heading">
+              <h2 id="footer-nav-2-heading">Resources</h2>
               <ul>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="accessibility-statement.html">Accessibility statement</a></li>
+                <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+                <li><a href="how-this-site-was-made.html">How This Site Was Made</a></li>
               </ul>
             </nav>
           </div>
