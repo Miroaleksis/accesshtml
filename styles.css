@@ -128,6 +128,27 @@ body {
   font-size: 12px;
 }
 
+.feature-list-legend span::before {
+  order: -2;
+}
+
+.feature-list-legend .required::after,
+.feature-list-legend .recommended::after {
+  content: '=' / '';
+  order: -1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* ── Typography ──────────────────────────── */
 
 .page-section ol,
