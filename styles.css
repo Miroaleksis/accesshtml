@@ -381,6 +381,10 @@ breadcrumb-bar {
   gap: 16px;
 }
 
+.page-description {
+  max-width: 640px;
+}
+
 .page-description h1 {
   margin-bottom: 24px;
 }
