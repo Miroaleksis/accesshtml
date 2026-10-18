@@ -119,6 +119,9 @@ body {
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
+  position: absolute;
+  top: 12px;
+  right: 0;
 }
 
 .feature-list-legend span {
@@ -181,9 +184,9 @@ h2 {
 }
 
 h3 {
-  font-size: inherit;
+  font-size: 18px;
   font-style: italic;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 a {
@@ -445,6 +448,7 @@ breadcrumb-bar {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
 }
 
 .page-description {
@@ -493,7 +497,7 @@ breadcrumb-bar {
 .page-section h2 {
   border-bottom: 1.5px solid var(--color-300);
   padding-bottom: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 /* ── On This Page aside ──────────────────── */
@@ -517,6 +521,10 @@ on-this-page {
   border-radius: 8px;
   padding: 40px;
   gap: 24px;
+}
+
+.on-this-page h2 {
+  font-size: 20px;
 }
 
 .on-this-page-links {
@@ -1172,7 +1180,10 @@ th:has(.table-group-btn) {
     flex-direction: column;
     align-items: stretch;
     padding: 80px 24px;
-    gap: 40px;
+  }
+
+  .feature-list-legend {
+    position: static;
   }
 
   .variants-aside {
