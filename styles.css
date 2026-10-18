@@ -151,9 +151,7 @@ body {
 
 /* ── Typography ──────────────────────────── */
 
-.page-section ol,
-.page-section ul,
-.page-description ul {
+:where(.page-inner ul, .page-inner ol) {
   padding-inline-start: 1.2em;
 }
 
@@ -482,6 +480,7 @@ breadcrumb-bar {
 
 .aside-links {
   list-style: none;
+  padding-inline-start: 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -521,32 +520,18 @@ on-this-page {
 }
 
 .on-this-page-links {
-  list-style: none;
-  counter-reset: on-this-page;
+  list-style: decimal;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
 .on-this-page-links li {
-  counter-increment: on-this-page;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding-inline-start: 0.4em;
 }
 
-.on-this-page-links li::before {
-  content: counter(on-this-page);
-  background-color: var(--color-500);
-  color: var(--color-150);
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  flex-shrink: 0;
+.on-this-page-links li::marker {
+  color: var(--color-500);
 }
 
 .on-this-page-links a {
@@ -716,7 +701,7 @@ on-this-page {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-inline-start: 0 !important;
+  padding-inline-start: 0;
 }
 
 .feature-list li {
