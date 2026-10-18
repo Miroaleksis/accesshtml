@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0..1,0');
+﻿@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0..1,0');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 :root {
@@ -29,7 +29,7 @@
   --color-accent: var(--magenta);
   --color-text: var(--dark-gray);
 
-  --font-family: 'Atkinson Hyperlegible', Verdana, sans-serif;
+  --font-family: 'Atkinson Hyperlegible Next', Verdana, sans-serif;
 }
 
 html {
@@ -157,14 +157,21 @@ h1 {
   line-height: 1;
 }
 
+.gradient-text {
+  background: linear-gradient(180deg, var(--color-400), var(--color-500));
+  background-clip: text;
+  color: transparent;
+}
+
 .page-subtitle {
   font-size: 18px;
   color: var(--color-500);
-  margin-top: 0.5rem;
+  margin-top: 12px;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h3 {
@@ -517,6 +524,9 @@ on-this-page {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 32px;
+  padding: 16px;
+  background: var(--color-150);
+  border-radius: 16px;
 }
 
 .home-search .attr-search {
@@ -618,6 +628,10 @@ on-this-page {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
 }
 
 .card-heading a {
