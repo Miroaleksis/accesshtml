@@ -546,7 +546,7 @@ on-this-page {
 }
 
 .filter-bar legend,
-.feedback-form legend {
+.contact-form legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -787,7 +787,7 @@ code-editor {
 
 /* ── Feedback form ───────────────────────── */
 
-.feedback-form fieldset {
+.contact-form fieldset {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -796,7 +796,7 @@ code-editor {
   border: none;
 }
 
-.feedback-form fieldset:disabled {
+.contact-form fieldset:disabled {
   opacity: 0.6;
 }
 
@@ -806,8 +806,9 @@ code-editor {
   gap: 4px;
 }
 
-.feedback-form input,
-.feedback-form textarea {
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
   padding: 8px 12px;
   border: 1.5px solid var(--color-400);
   border-radius: 8px;
@@ -816,21 +817,21 @@ code-editor {
   background: var(--color-0);
 }
 
-.feedback-form textarea {
+.contact-form textarea {
   resize: vertical;
 }
 
-.feedback-form .form-hint {
+.contact-form .form-hint {
   margin: 0;
   font-size: 14px;
   color: var(--color-500);
 }
 
-.feedback-form .button {
+.contact-form .button {
   align-self: flex-start;
 }
 
-.feedback-form :disabled {
+.contact-form :disabled {
   cursor: not-allowed;
 }
 

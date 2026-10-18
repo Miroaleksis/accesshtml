@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AccessHTML.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/Favicon.png" type="image/png" sizes="48x48">
+</head>
+<body>
+
+  <site-header></site-header>
+
+  <div class="page-inner">
+
+    <main class="page-content" id="main-content" tabindex="-1">
+
+      <div class="page-description">
+        <h1>Contact</h1>
+        <p style="margin-bottom: 16px"><strong>The contact form is coming soon.</strong></p>
+        <form class="contact-form">
+          <fieldset disabled>
+            <legend>Send a message</legend>
+            <div class="form-field">
+              <label for="contact-topic">Subject</label>
+              <select id="contact-topic">
+                <option value="website">Accessibility issue on the website</option>
+                <option value="example">Accessibility issue in a code example</option>
+                <option value="other">Other inquiry</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message (required)</label>
+              <textarea id="contact-message" rows="5" required aria-describedby="contact-message-hint"></textarea>
+              <p class="form-hint" id="contact-message-hint">Describe the issue as precisely as possible and mention where you noticed it.</p>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email (only needed if you want a reply)</label>
+              <input type="email" id="contact-email" autocomplete="email">
+            </div>
+            <button type="submit" class="button">Send message</button>
+          </fieldset>
+        </form>
+      </div>
+
+    </main>
+
+  </div>
+  <site-footer></site-footer>
+
+  <script src="common.js"></script>
+  <script src="contact.js"></script>
+
+</body>
+</html>

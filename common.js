@@ -133,7 +133,7 @@ class SiteFooter extends HTMLElement {
             <nav aria-labelledby="footer-nav-2-heading">
               <h2 id="footer-nav-2-heading">Resources</h2>
               <ul>
-                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
                 <li><a href="how-this-site-was-made.html">How This Site Was Made</a></li>
               </ul>
