@@ -116,13 +116,32 @@ class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer class="site-footer">
-        <a href="index.html" class="site-logo">
-          <img src="images/Logo.svg" alt="AccessHTML.com">
-        </a>
-        <nav aria-label="Footer menu">
-          <a href="accessibility-statement.html">Accessibility statement</a>
-        </nav>
-        <p class="site-footer-copyright">© 2026</p>
+        <div class="site-footer-main">
+          <a href="index.html" class="site-logo">
+            <img src="images/Logo.svg" alt="AccessHTML.com">
+          </a>
+          <div class="site-footer-links">
+            <nav aria-labelledby="footer-explore">
+              <h2 id="footer-explore">Explore</h2>
+              <ul>
+                <li><a href="index.html">Patterns</a></li>
+                <li><a href="attributes.html">Elements & Attributes</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+            <nav aria-labelledby="footer-information">
+              <h2 id="footer-information">Information</h2>
+              <ul>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="accessibility-statement.html">Accessibility statement</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="site-footer-sub">
+          <p>© 2026 AccessHTML.com</p>
+          <a href="#top">Back to top</a>
+        </div>
       </footer>
     `;
   }

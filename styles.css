@@ -328,8 +328,38 @@ site-footer {
 .site-footer {
   padding: 48px;
   display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.site-footer-main,
+.site-footer-sub {
+  display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px;
+}
+
+.site-footer-links {
+  display: flex;
+  gap: 64px;
+}
+
+.site-footer nav {
+  min-width: 180px;
+}
+
+.site-footer h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer-sub {
+  border-top: 1.5px solid var(--color-300);
+  padding-top: 16px;
 }
 
 /* ── Breadcrumb bar ──────────────────────── */
@@ -1055,8 +1085,14 @@ th:has(.table-group-btn) {
     padding: 0 24px;
   }
 
-  .site-footer {
+  .site-footer-main,
+  .site-footer-sub {
     flex-direction: column;
+  }
+
+  .site-footer-links {
+    flex-wrap: wrap;
+    gap: 32px 56px;
   }
 
   .site-logo {
