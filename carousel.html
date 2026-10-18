@@ -37,7 +37,7 @@
           <li aria-description="Required">Carousel controls must be placed before the slides in DOM order.</li>
           <li aria-description="Required">Feedback must be provided when the slide changes, for example by adding <code>aria-live</code> to the element that contains the slides. When the carousel rotates automatically, <code>aria-live</code> must be set to <code>off</code>.</li>
           <li aria-description="Required">If the carousel rotates automatically, a play/pause button must be available to stop the motion. Feedback from the action must be provided to screen readers, for example, by updating the <code>aria-label</code> of the button.</li>
-          <li aria-description="Required">Inactive slides must be removed from the accessibility tree and the focus order, for example using <code>inert</code>.</li>
+          <li aria-description="Required">If inactive slides are present in the DOM, they must be hidden from screen readers and the keyboard, for example using <code>inert</code>.</li>
           <li aria-description="Recommended">A <code>&lt;section&gt;</code> landmark with <code>aria-roledescription="carousel"</code> and a descriptive <code>aria-label</code> identifies the carousel's purpose.</li>
           <li aria-description="Recommended"><code>aria-roledescription="slide"</code> identifies a single slide to screen readers.</li>
         </ul>

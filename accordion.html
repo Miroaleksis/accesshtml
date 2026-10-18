@@ -51,6 +51,7 @@
         <p>A custom accordion may be necessary, for example, when the content panel does not directly follow the trigger button in the DOM. It requires explicit attributes to communicate semantics:</p>
         <ul class="feature-list">
           <li aria-description="Required"><code>aria-expanded</code> on the trigger button communicates the expanded or collapsed state to screen readers.</li>
+          <li aria-description="Required">Collapsed panel content must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>. If the content remains partly visible, such as a faded preview, <code>inert</code> can be used instead.</li>
           <li aria-description="Required">If the trigger button follows the content panel in DOM order, focus must move to the panel manually when the button is pressed.</li>
           <li aria-description="Recommended"><code>aria-controls</code> points to the element the trigger controls.</li>
         </ul>
@@ -123,7 +124,7 @@
 <div class="custom-accordion">
   <h3>Product description</h3>
   <p>Wireless headphones with active noise cancellation and up to 30 hours of battery life.</p>
-  <div id="more-info" class="custom-accordion-content" tabindex="-1" aria-hidden="true">
+  <div id="more-info" class="custom-accordion-content" tabindex="-1" inert>
     <p>Compatible with Bluetooth 5.3 and available in three colors: black, white and navy. Includes a carrying case and USB-C charging cable. Foldable design for easy storage.</p>
     <p>The ear cushions are made from memory foam for extended comfort, and the headband adjusts to fit most head sizes. A 2-year warranty is included with every purchase.</p>
   </div>
@@ -190,7 +191,7 @@
   margin-bottom: 0;
 }
 
-.custom-accordion-content[aria-hidden="false"] {
+.custom-accordion-content:not([inert]) {
   max-height: 1000px;
   -webkit-mask-image: none;
   mask-image: none;
@@ -203,8 +204,8 @@ document.querySelectorAll('.custom-accordion-trigger').forEach(trigger => {
     const expanded = trigger.getAttribute('aria-expanded') === 'true';
     trigger.setAttribute('aria-expanded', !expanded);
     const content = document.getElementById(trigger.getAttribute('aria-controls'));
-    if (!expanded) { content.setAttribute('aria-hidden', 'false'); content.focus(); }
-    else content.setAttribute('aria-hidden', 'true');
+    if (!expanded) { content.inert = false; content.focus(); }
+    else content.inert = true;
   });
 });
   </script>
