@@ -546,7 +546,7 @@ on-this-page {
   gap: 4px;
   font-size: 14px;
   padding: 2px 8px 2px 6px;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1.5px solid var(--color-300);
   color: var(--color-700);
   background: var(--color-150);
