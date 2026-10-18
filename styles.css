@@ -1218,5 +1218,4 @@ th:has(.table-group-btn) {
 	outline: 2px solid var(--color-700);
 	outline-offset: 2px;
 	box-shadow: 0 0 0 2px var(--color-0);
-  border-radius: 8px;
 }
