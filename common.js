@@ -7,7 +7,7 @@ class SiteHeader extends HTMLElement {
         <a href="index.html" class="site-logo">
           <img src="images/Logo.svg" alt="AccessHTML.com">
         </a>
-        <button class="nav-toggle" aria-label="Main menu" aria-expanded="false" aria-controls="site-nav"></button>
+        <button class="nav-toggle icon" aria-label="Main menu" aria-expanded="false" aria-controls="site-nav"></button>
         <nav id="site-nav" class="site-nav" aria-label="Main menu">
           <ul>
             <li><a href="index.html">Patterns</a></li>
@@ -50,6 +50,7 @@ class BreadcrumbBar extends HTMLElement {
 
     function createItem(text, href, current) {
       const li = document.createElement('li');
+      li.className = 'icon';
       if (current) {
         li.setAttribute('aria-current', 'page');
         li.textContent = text;
@@ -140,7 +141,7 @@ class SiteFooter extends HTMLElement {
         </div>
         <div class="site-footer-sub">
           <p>© 2026 AccessHTML.com</p>
-          <a href="#top">Back to top</a>
+          <a href="#top" class="icon">Back to top</a>
         </div>
       </footer>
     `;

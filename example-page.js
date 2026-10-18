@@ -20,7 +20,7 @@ class CodeEditor extends HTMLElement {
         <div class="code-toolbar">
           <div class="code-tabs" role="tablist">${tabButtons}
           </div>
-          <button class="button copy-btn">
+          <button class="button icon copy-btn">
             <span aria-live="polite">Copy</span>
           </button>
         </div>

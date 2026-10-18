@@ -61,15 +61,11 @@ body {
 
 /* ── Icons ───────────────────────────────── */
 
-button::before,
-button::after,
-.breadcrumb-trail li:not(:last-child)::after,
-.aside-link::after,
-.site-footer-sub a::after,
+/* Feature list markers get the icon font without the .icon class */
+.icon::before,
+.icon::after,
 .feature-list li::before,
-.feature-list-legend span::before,
-.tag::before,
-[class*="tag--"]::before {
+.feature-list-legend span::before {
   font-family: 'Material Symbols Outlined';
   font-style: normal;
   font-weight: normal;
@@ -188,7 +184,6 @@ a {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   background: var(--color-700);
   color: var(--color-0);
   white-space: nowrap;
@@ -203,6 +198,20 @@ a {
   background: none;
   color: var(--color-700);
   border: 1.5px solid var(--color-400);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.icon:where(:not(:empty))::before {
+  margin-left: -0.1em;
+}
+
+.icon:where(:not(:empty))::after {
+  margin-right: -0.1em;
 }
 
 code:not(pre code),
@@ -364,9 +373,6 @@ site-footer {
 }
 
 .site-footer-sub a {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
   text-decoration: none;
 }
 
@@ -397,6 +403,7 @@ breadcrumb-bar {
 .breadcrumb-trail li {
   display: flex;
   align-items: center;
+  gap: 0;
 }
 
 /* ── Page layout ─────────────────────────── */
@@ -463,8 +470,7 @@ breadcrumb-bar {
 }
 
 .aside-link {
-  color: var(--color-accent);
-  text-decoration: underline;
+  display: inline;
 }
 
 .page-section {
@@ -588,7 +594,6 @@ on-this-page {
 .tag {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   font-size: 14px;
   padding: 2px 8px 2px 6px;
   border-radius: 4px;
@@ -870,7 +875,6 @@ code-editor {
 
 #search-btn::before {
   content: 'search' / '';
-  font-family: 'Material Symbols Outlined';
   font-size: 24px;
 }
 
@@ -921,6 +925,10 @@ code-editor {
   vertical-align: top;
 }
 
+.table td[data-level] {
+  display: table-cell;
+}
+
 .table td[data-level="2"] {
   padding-left: 30px;
 }
@@ -931,15 +939,10 @@ code-editor {
 
 .table td[data-level]::before {
   content: 'subdirectory_arrow_right' / '';
-  font-family: 'Material Symbols Outlined';
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
-  line-height: 1;
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0;
   color: var(--color-400);
   vertical-align: middle;
-  margin-right: 4px;
+  margin: 0 4px 0 0;
 }
 
 .table th {
@@ -996,6 +999,7 @@ code-editor {
   content: '';
   position: absolute;
   inset: 0;
+  margin: 0;
 }
 
 .category-btn::after {
@@ -1006,8 +1010,6 @@ code-editor {
 .category-btn::after,
 .table-group-btn::after {
   content: 'expand_less' / '';
-  text-transform: none;
-  letter-spacing: normal;
   transition: transform 0.2s ease;
   margin-left: auto;
   font-size: 24px;

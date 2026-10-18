@@ -29,7 +29,7 @@
 
       <div role="search" class="attr-search">
         <input type="search" class="search-input" id="attr-search-input" aria-label="Search elements or attributes" placeholder="Search elements or attributes (e.g., aria-expanded)">
-        <button type="button" id="search-btn" class="button" aria-label="Search"></button>
+        <button type="button" id="search-btn" class="button icon" aria-label="Search"></button>
         <output class="search-results" id="attr-search-results"></output>
       </div>
 
@@ -37,9 +37,9 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-roles">
-              <button class="category-btn" aria-expanded="true">Roles</button>
+              <button class="category-btn icon" aria-expanded="true">Roles</button>
             </h2>
-            <button class="tooltip-btn" aria-label="About Roles" aria-expanded="false"></button>
+            <button class="tooltip-btn icon" aria-label="About Roles" aria-expanded="false"></button>
           </div>
           <div role="tooltip" id="tip-roles">Roles define the purpose of an element. Native elements come with built-in roles and behaviors and should be used when possible. ARIA roles only communicate semantics – behaviors must be implemented separately.</div>
           <div class="table-scroll">
@@ -53,7 +53,7 @@
           </thead>
           <tbody class="table-group group--category-1">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Navigation</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn icon" aria-expanded="true">Navigation</button></th>
             </tr>
             <tr>
               <td><code>&lt;a&gt;</code></td>
@@ -77,7 +77,7 @@
             </tr>
             <tr>
               <td>—</td>
-              <td data-level="1"><code>tab</code></td>
+              <td class="icon" data-level="1"><code>tab</code></td>
               <td>A control within a tablist that shows its associated tabpanel when activated.</td>
             </tr>
             <tr>
@@ -88,7 +88,7 @@
           </tbody>
           <tbody class="table-group group--category-2">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Function/Input</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn icon" aria-expanded="true">Function/Input</button></th>
             </tr>
             <tr>
               <td><code>&lt;button&gt;</code></td>
@@ -116,8 +116,8 @@
               <td>A list of options from which the user can select several items. The multiselectable property is built in, whereas a custom <code>role="listbox"</code> element needs <code>aria-multiselectable="true"</code> to communicate it.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;option&gt;</code></td>
-              <td data-level="1"><code>option</code></td>
+              <td class="icon" data-level="1"><code>&lt;option&gt;</code></td>
+              <td class="icon" data-level="1"><code>option</code></td>
               <td>A selectable item within a listbox or a combobox.</td>
             </tr>
             <tr>
@@ -127,7 +127,7 @@
             </tr>
             <tr>
               <td>—</td>
-              <td data-level="1"><code>menuitem</code></td>
+              <td class="icon" data-level="1"><code>menuitem</code></td>
               <td>An individual option or command within a menu or menubar. Not to be confused with a link in a navigation menu.</td>
             </tr>
             <tr>
@@ -233,7 +233,7 @@
           </tbody>
           <tbody class="table-group group--category-3">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Structure/Layout</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn icon" aria-expanded="true">Structure/Layout</button></th>
             </tr>
             <tr>
               <td><code>&lt;header&gt;</code></td>
@@ -256,7 +256,7 @@
               <td>A container that groups related form controls.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;legend&gt;</code></td>
+              <td class="icon" data-level="1"><code>&lt;legend&gt;</code></td>
               <td>—</td>
               <td>The group label of a <code>&lt;fieldset&gt;</code>.</td>
             </tr>
@@ -266,8 +266,8 @@
               <td>A list of items. A <code>&lt;ul&gt;</code> is an unordered list, where the order of the items does not matter, and an <code>&lt;ol&gt;</code> is an ordered list, where the order of the items is meaningful.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;li&gt;</code></td>
-              <td data-level="1"><code>listitem</code></td>
+              <td class="icon" data-level="1"><code>&lt;li&gt;</code></td>
+              <td class="icon" data-level="1"><code>listitem</code></td>
               <td>A single item within a list.</td>
             </tr>
             <tr>
@@ -296,28 +296,28 @@
               <td>A grid of data arranged in rows and columns.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;tr&gt;</code></td>
-              <td data-level="1"><code>row</code></td>
+              <td class="icon" data-level="1"><code>&lt;tr&gt;</code></td>
+              <td class="icon" data-level="1"><code>row</code></td>
               <td>A row of cells within a table or grid.</td>
             </tr>
             <tr>
-              <td data-level="2"><code>&lt;td&gt;</code></td>
-              <td data-level="2"><code>cell</code></td>
+              <td class="icon" data-level="2"><code>&lt;td&gt;</code></td>
+              <td class="icon" data-level="2"><code>cell</code></td>
               <td>A data cell within a table row.</td>
             </tr>
             <tr>
-              <td data-level="2"><code>&lt;th&gt;</code></td>
-              <td data-level="2"><code>columnheader</code></td>
+              <td class="icon" data-level="2"><code>&lt;th&gt;</code></td>
+              <td class="icon" data-level="2"><code>columnheader</code></td>
               <td>A header cell for a column in a table.</td>
             </tr>
             <tr>
-              <td data-level="2"><code>&lt;th scope="row"&gt;</code></td>
-              <td data-level="2"><code>rowheader</code></td>
+              <td class="icon" data-level="2"><code>&lt;th scope="row"&gt;</code></td>
+              <td class="icon" data-level="2"><code>rowheader</code></td>
               <td>A header cell for a row in a table.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;thead&gt;</code> / <code>&lt;tbody&gt;</code> / <code>&lt;tfoot&gt;</code></td>
-              <td data-level="1"><code>rowgroup</code></td>
+              <td class="icon" data-level="1"><code>&lt;thead&gt;</code> / <code>&lt;tbody&gt;</code> / <code>&lt;tfoot&gt;</code></td>
+              <td class="icon" data-level="1"><code>rowgroup</code></td>
               <td>A group of rows within a table. A <code>&lt;thead&gt;</code> holds the header rows, a <code>&lt;tbody&gt;</code> holds the main data rows and a <code>&lt;tfoot&gt;</code> holds the footer rows, such as totals.</td>
             </tr>
             <tr>
@@ -326,14 +326,14 @@
               <td>A native accordion widget that expands and collapses content.</td>
             </tr>
             <tr>
-              <td data-level="1"><code>&lt;summary&gt;</code></td>
+              <td class="icon" data-level="1"><code>&lt;summary&gt;</code></td>
               <td>—</td>
               <td>The visible toggle of a <code>&lt;details&gt;</code> element.</td>
             </tr>
           </tbody>
           <tbody class="table-group group--category-4">
             <tr>
-              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn" aria-expanded="true">Status/Info</button></th>
+              <th colspan="3" scope="rowgroup" headers=""><button class="table-group-btn icon" aria-expanded="true">Status/Info</button></th>
             </tr>
             <tr>
               <td>—</td>
@@ -370,9 +370,9 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-states-properties">
-              <button class="category-btn" aria-expanded="true">States and Properties</button>
+              <button class="category-btn icon" aria-expanded="true">States and Properties</button>
             </h2>
-            <button class="tooltip-btn" aria-label="About States and Properties" aria-expanded="false"></button>
+            <button class="tooltip-btn icon" aria-label="About States and Properties" aria-expanded="false"></button>
           </div>
           <div role="tooltip" id="tip-values">Attributes that only accept a fixed set of values. States are dynamic attributes that change with user interaction. Properties are static attributes that rarely change, set by the author to describe an element.</div>
           <div class="table-scroll">
@@ -387,7 +387,7 @@
           </thead>
           <tbody class="table-group">
             <tr>
-              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="true">States</button></th>
+              <th colspan="4" scope="rowgroup"><button class="table-group-btn icon" aria-expanded="true">States</button></th>
             </tr>
             <tr>
               <td><code>checked</code></td>
@@ -440,7 +440,7 @@
           </tbody>
           <tbody class="table-group">
             <tr>
-              <th colspan="4" scope="rowgroup"><button class="table-group-btn" aria-expanded="true">Properties</button></th>
+              <th colspan="4" scope="rowgroup"><button class="table-group-btn icon" aria-expanded="true">Properties</button></th>
             </tr>
             <tr>
               <td>—</td>
@@ -506,9 +506,9 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-names">
-              <button class="category-btn" aria-expanded="true">Names and Descriptions</button>
+              <button class="category-btn icon" aria-expanded="true">Names and Descriptions</button>
             </h2>
-            <button class="tooltip-btn" aria-label="About Names and Descriptions" aria-expanded="false"></button>
+            <button class="tooltip-btn icon" aria-label="About Names and Descriptions" aria-expanded="false"></button>
           </div>
           <div role="tooltip" id="tip-names">Attributes that provide accessible names and descriptions as text strings directly in the markup.</div>
           <div class="table-scroll">
@@ -546,9 +546,9 @@
         <div class="table-accordion">
           <div class="table-accordion-header">
             <h2 id="heading-references">
-              <button class="category-btn" aria-expanded="true">References</button>
+              <button class="category-btn icon" aria-expanded="true">References</button>
             </h2>
-            <button class="tooltip-btn" aria-label="About References" aria-expanded="false"></button>
+            <button class="tooltip-btn icon" aria-label="About References" aria-expanded="false"></button>
           </div>
           <div role="tooltip" id="tip-references">Attributes that reference the <code>id</code> of another element to create a relationship between elements.</div>
           <div class="table-scroll">
