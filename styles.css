@@ -8,26 +8,25 @@
   --gray: lightgray;
   --light-gray: #ebebeb;
   --extra-light-gray: whitesmoke;
+  --black: #3f3f3f;
   --white: #ffffff;
-  --blue: #0077a0;
 
-  --purple-700: #3b1f6b;
-  --purple-500: #6b4f9a;
-  --purple-400: #9d7dc4;
-  --purple-300: #c9b8e8;
-  --purple-150: #ede8f7;
-  --purple-100: #f9f7fd;
-  --magenta: #be185d;
+  --fern-700: #074020;
+  --fern-500: #306d46;
+  --fern-400: #548e66;
+  --fern-300: #b7d6bf;
+  --fern-150: #ecf5ee;
+  --fern-100: #fbfdfc;
 
-  --color-700: var(--purple-700);
-  --color-500: var(--purple-500);
-  --color-400: var(--purple-400);
-  --color-300: var(--purple-300);
-  --color-150: var(--purple-150);
-  --color-100: var(--purple-100);
+  --color-700: var(--fern-700);
+  --color-500: var(--fern-500);
+  --color-400: var(--fern-400);
+  --color-300: var(--fern-300);
+  --color-150: var(--fern-150);
+  --color-100: var(--fern-100);
   --color-0: var(--white);
-  --color-accent: var(--magenta);
   --color-text: var(--dark-gray);
+  --color-heading: var(--black);
 
   --font-family: 'Atkinson Hyperlegible Next', Verdana, sans-serif;
 }
@@ -159,7 +158,7 @@ body {
 }
 
 h1, h2 {
-  color: var(--color-700);
+  color: var(--color-heading);
   font-weight: 700;
 }
 

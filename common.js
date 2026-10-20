@@ -5,7 +5,7 @@ class SiteHeader extends HTMLElement {
       <header class="site-header">
         <a href="#main-content" class="skip-link button">Skip to main content</a>
         <a href="index.html" class="site-logo">
-          <img src="images/Logo.svg" alt="AccessHTML.com">
+          <img src="images/Logo.svg" alt="Home page">
         </a>
         <button class="nav-toggle icon" aria-label="Main menu" aria-expanded="false" aria-controls="site-nav"></button>
         <nav id="site-nav" class="site-nav" aria-label="Main menu">
@@ -119,7 +119,7 @@ class SiteFooter extends HTMLElement {
       <footer class="site-footer">
         <div class="site-footer-main">
           <a href="index.html" class="site-logo">
-            <img src="images/Logo.svg" alt="AccessHTML.com">
+            <img src="images/Logo.svg" alt="Home page">
           </a>
           <div class="site-footer-links">
             <nav aria-labelledby="footer-nav-1-heading">
@@ -141,7 +141,7 @@ class SiteFooter extends HTMLElement {
           </div>
         </div>
         <div class="site-footer-sub">
-          <p>© 2026 AccessHTML.com</p>
+          <p>© 2026</p>
           <a href="#top" class="icon">Back to top</a>
         </div>
       </footer>

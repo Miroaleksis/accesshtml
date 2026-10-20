@@ -1,11 +1,11 @@
 <svg width="340" height="200" viewBox="0 0 340 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2192_257)">
-<path d="M118.618 84L132 100L118.618 116H44C41.7909 116 40 114.209 40 112V88C40 85.7909 41.7909 84 44 84H118.618Z" fill="#C9B8E8"/>
-<rect width="44" height="2" transform="translate(64 99)" fill="#9D7DC4"/>
-<path d="M202.618 84L216 100L202.618 116H124L137.382 100L124 84H202.618Z" fill="#C9B8E8"/>
-<rect width="44" height="2" transform="translate(148 99)" fill="#9D7DC4"/>
-<path d="M296 84C298.209 84 300 85.7909 300 88V112C300 114.209 298.209 116 296 116H208L221.382 100L208 84H296Z" fill="#6B4F9A"/>
-<rect width="44" height="2" transform="translate(232 99)" fill="#9D7DC4"/>
+<path d="M118.618 84L132 100L118.618 116H44C41.7909 116 40 114.209 40 112V88C40 85.7909 41.7909 84 44 84H118.618Z" fill="#B7D6BF"/>
+<rect width="44" height="2" transform="translate(64 99)" fill="#548E66"/>
+<path d="M202.618 84L216 100L202.618 116H124L137.382 100L124 84H202.618Z" fill="#B7D6BF"/>
+<rect width="44" height="2" transform="translate(148 99)" fill="#548E66"/>
+<path d="M296 84C298.209 84 300 85.7909 300 88V112C300 114.209 298.209 116 296 116H208L221.382 100L208 84H296Z" fill="#306D46"/>
+<rect width="44" height="2" transform="translate(232 99)" fill="#B7D6BF"/>
 </g>
 <defs>
 <clipPath id="clip0_2192_257">
