@@ -301,6 +301,7 @@ site-footer {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-right: -12px;
 }
 
 .nav-toggle::before {
@@ -522,8 +523,8 @@ on-this-page {
   flex-direction: column;
   background: var(--color-150);
   border-radius: 8px;
-  padding: 40px;
-  gap: 24px;
+  padding: 32px 36px;
+  gap: 20px;
 }
 
 .on-this-page h2 {
