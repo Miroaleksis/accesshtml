@@ -103,14 +103,14 @@ body {
 
 .feature-list li[aria-description="Required"]::before,
 .feature-list-legend .required::before {
-  content: 'square' / '';
+  content: 'square' / 'Required: ';
   color: var(--color-500);
   font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0;
 }
 
 .feature-list li[aria-description="Recommended"]::before,
 .feature-list-legend .recommended::before {
-  content: 'circle' / '';
+  content: 'circle' / 'Recommended: ';
   color: var(--color-500);
 }
 
