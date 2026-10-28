@@ -149,3 +149,13 @@ class SiteFooter extends HTMLElement {
   }
 }
 customElements.define('site-footer', SiteFooter);
+
+// Feature list items: tell screen readers the feature type that the icon shows
+const featureTypeLabels = { required: 'Required: ', recommended: 'Recommended: ' };
+
+document.querySelectorAll('.feature-list li[data-type]').forEach(item => {
+  const label = document.createElement('span');
+  label.className = 'visually-hidden';
+  label.textContent = featureTypeLabels[item.dataset.type];
+  item.prepend(label);
+});

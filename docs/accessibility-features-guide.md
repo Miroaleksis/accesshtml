@@ -1,6 +1,6 @@
 # AccessHTML.com: Accessibility Features Guide
 
-Rules for the "Accessibility Features" list items (`<li aria-description="Required/Recommended">`) across all pattern pages. The same rules apply to any text in snippet descriptions that describes accessibility features, whether or not it is marked with `aria-description`. Text that only describes the nature of an element is excluded.
+Rules for the "Accessibility Features" list items (`<li data-type="required/recommended">`) across all pattern pages. The same rules apply to any text in snippet descriptions that describes accessibility features, whether or not it is marked with `data-type`. Text that only describes the nature of an element is excluded.
 
 ---
 
@@ -38,7 +38,7 @@ Chosen by situation:
 1.2.1. **Required** items use "must" (patterns 1.1.1 and 1.1.2 above).
 1.2.2. **Recommended** items use "should" in the equivalent of patterns 1.1.1 and 1.1.2.
 1.2.3. **"can"** is reserved for genuinely optional, equally-valid alternative techniques, not as a weaker synonym for "should".
-1.2.4. Modal verbs ("must"/"should"/"can") belong to passive-voice sentences (1.1.2, in any of its forms). Active-voice sentences (1.1.1) never use them. The Required/Recommended priority is already conveyed by the `aria-description` attribute itself, so repeating it in the sentence is redundant.
+1.2.4. Modal verbs ("must"/"should"/"can") belong to passive-voice sentences (1.1.2, in any of its forms). Active-voice sentences (1.1.1) never use them. The Required/Recommended priority is already conveyed by the feature type label (`data-type`) itself, so repeating it in the sentence is redundant.
 1.2.5. "may" is different from "must"/"should"/"can": it expresses genuine uncertainty about external behavior (e.g. how assistive technology might respond), not a requirement/recommendation level or a technique choice. It is not restricted to passive voice, and it can appear in active sentences even without a conditional clause.
 
 ### 1.3. Parallel lists
@@ -121,7 +121,7 @@ Use correct, idiomatic UI and development terminology for elements and functiona
 
 ### 4.1. Where features are listed
 
-4.1.1. All accessibility features, including those in snippet descriptions, are listed as Required or Recommended bullets (`<li aria-description>`), not written as prose.
+4.1.1. All accessibility features, including those in snippet descriptions, are listed as Required or Recommended bullets (`<li data-type>`), not written as prose.
 4.1.2. **Exception:** alternative ways of achieving the same thing (option A vs. option B) may be written as prose or a numbered list.
 
 ### 4.2. Required before Recommended

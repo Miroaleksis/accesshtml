@@ -101,16 +101,16 @@ body {
   top: 4px;
 }
 
-.feature-list li[aria-description="Required"]::before,
+.feature-list li[data-type="required"]::before,
 .feature-list-legend .required::before {
-  content: 'square' / 'Required: ';
+  content: 'square' / '';
   color: var(--color-500);
   font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0;
 }
 
-.feature-list li[aria-description="Recommended"]::before,
+.feature-list li[data-type="recommended"]::before,
 .feature-list-legend .recommended::before {
-  content: 'circle' / 'Recommended: ';
+  content: 'circle' / '';
   color: var(--color-500);
 }
 

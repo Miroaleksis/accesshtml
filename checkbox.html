@@ -33,10 +33,10 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">An input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
-          <li aria-description="Required"><code>type="checkbox"</code> provides the checkbox role and behavior as well as communicates the checked state.</li>
-          <li aria-description="Required"><code>indeterminate</code> on a checkbox communicates the mixed state to screen readers.</li>
-          <li aria-description="Recommended"><code>aria-controls</code> on the parent checkbox points to the checkboxes it controls.</li>
+          <li data-type="required">An input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
+          <li data-type="required"><code>type="checkbox"</code> provides the checkbox role and behavior as well as communicates the checked state.</li>
+          <li data-type="required"><code>indeterminate</code> on a checkbox communicates the mixed state to screen readers.</li>
+          <li data-type="recommended"><code>aria-controls</code> on the parent checkbox points to the checkboxes it controls.</li>
         </ul>
       </section>
 
@@ -52,8 +52,8 @@
         <h2>Switch</h2>
         <p>A switch is a binary toggle that turns a setting on or off and shares the same underlying <code>&lt;input&gt;</code> element as a checkbox. The native checkbox is usually visually hidden, and the visual appearance of the switch is implemented manually.</p>
         <ul class="feature-list">
-          <li aria-description="Required">The native checkbox must remain in the accessibility tree and keep a visible keyboard focus indicator, even when it is visually hidden.</li>
-          <li aria-description="Required"><code>role="switch"</code> identifies the control as an on/off switch and overrides the implicit checkbox role.</li>
+          <li data-type="required">The native checkbox must remain in the accessibility tree and keep a visible keyboard focus indicator, even when it is visually hidden.</li>
+          <li data-type="required"><code>role="switch"</code> identifies the control as an on/off switch and overrides the implicit checkbox role.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>

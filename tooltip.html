@@ -33,8 +33,8 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">A tooltip is activated when a dedicated trigger button either receives hover or focus, or is pressed. Using a pressable trigger button is more reliable than solely hover- or focus-based activation, which can behave inconsistently on touchscreens.</li>
-          <li aria-description="Required">If a tooltip obscures content, it must be dismissible with <kbd>Esc</kbd>.</li>
+          <li data-type="required">A tooltip is activated when a dedicated trigger button either receives hover or focus, or is pressed. Using a pressable trigger button is more reliable than solely hover- or focus-based activation, which can behave inconsistently on touchscreens.</li>
+          <li data-type="required">If a tooltip obscures content, it must be dismissible with <kbd>Esc</kbd>.</li>
         </ul>
       </section>
 
@@ -42,8 +42,8 @@
         <h2>Tooltip</h2>
         <p>A standard tooltip is activated when the trigger button receives focus or hover.</p>
         <ul class="feature-list">
-          <li aria-description="Required"><code>aria-describedby</code> associates the tooltip with the trigger button.</li>
-          <li aria-description="Recommended"><code>role="tooltip"</code> identifies the tooltip.</li>
+          <li data-type="required"><code>aria-describedby</code> associates the tooltip with the trigger button.</li>
+          <li data-type="recommended"><code>role="tooltip"</code> identifies the tooltip.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="a"></div>
@@ -55,9 +55,9 @@
         <h2>Toggletip</h2>
         <p>A toggletip is activated by pressing the trigger button. It is practically a <a href="./accordion.html#custom-accordion">custom accordion</a>.</p>
         <ul class="feature-list">
-          <li aria-description="Required"><code>aria-expanded</code> on the trigger button communicates the expanded or collapsed state to screen readers.</li>
-          <li aria-description="Required">The collapsed toggletip must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
-          <li aria-description="Recommended"><code>aria-controls</code> on the trigger button points to the tooltip.</li>
+          <li data-type="required"><code>aria-expanded</code> on the trigger button communicates the expanded or collapsed state to screen readers.</li>
+          <li data-type="required">The collapsed toggletip must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
+          <li data-type="recommended"><code>aria-controls</code> on the trigger button points to the tooltip.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>

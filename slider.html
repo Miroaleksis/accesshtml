@@ -32,11 +32,11 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">An input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
-          <li aria-description="Required"><code>type="range"</code> provides the slider role, appearance and behavior.</li>
-          <li aria-description="Required"><code>min</code>, <code>max</code> and <code>step</code> attributes define the allowed range and increment.</li>
-          <li aria-description="Required"><kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> decrease and increase the value by one step.</li>
-          <li aria-description="Recommended">The current value is displayed visibly next to the slider and updates as the user moves the handle.</li>
+          <li data-type="required">An input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
+          <li data-type="required"><code>type="range"</code> provides the slider role, appearance and behavior.</li>
+          <li data-type="required"><code>min</code>, <code>max</code> and <code>step</code> attributes define the allowed range and increment.</li>
+          <li data-type="required"><kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> decrease and increase the value by one step.</li>
+          <li data-type="recommended">The current value is displayed visibly next to the slider and updates as the user moves the handle.</li>
 
         </ul>
       </section>
@@ -53,9 +53,9 @@
         <h2>Multi-Thumb Slider</h2>
         <p>A multi-thumb slider uses two handles to define a range, such as a minimum and maximum price. The slider can be implemented using two visually overlapping <code>&lt;input type="range"&gt;</code> elements with dynamically updating <code>min</code> and <code>max</code> values.</p>
         <ul class="feature-list">
-          <li aria-description="Required">A <code>&lt;fieldset&gt;</code> groups the two controls and <code>&lt;legend&gt;</code> provides a label for the group.</li>
-          <li aria-description="Required">Both controls must have their own <code>&lt;label&gt;</code>.</li>
-          <li aria-description="Required">Both controls must have a distinguishable keyboard focus indicator.</li>
+          <li data-type="required">A <code>&lt;fieldset&gt;</code> groups the two controls and <code>&lt;legend&gt;</code> provides a label for the group.</li>
+          <li data-type="required">Both controls must have their own <code>&lt;label&gt;</code>.</li>
+          <li data-type="required">Both controls must have a distinguishable keyboard focus indicator.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>

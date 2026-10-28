@@ -33,10 +33,10 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required"><code>&lt;th&gt;</code> identifies a header cell and <code>&lt;td&gt;</code> a data cell, allowing screen readers to associate a data cell with its corresponding header.</li>
-          <li aria-description="Required"><code>scope="col"</code> on a <code>&lt;th&gt;</code> identifies it as a column header and <code>scope="row"</code> as a row header.</li>
-          <li aria-description="Recommended"><code>&lt;caption&gt;</code> provides a title for the table.</li>
-          <li aria-description="Recommended"><code>&lt;thead&gt;</code> groups the header row and <code>&lt;tbody&gt;</code> groups the data rows, helping screen readers understand the table structure.</li>
+          <li data-type="required"><code>&lt;th&gt;</code> identifies a header cell and <code>&lt;td&gt;</code> a data cell, allowing screen readers to associate a data cell with its corresponding header.</li>
+          <li data-type="required"><code>scope="col"</code> on a <code>&lt;th&gt;</code> identifies it as a column header and <code>scope="row"</code> as a row header.</li>
+          <li data-type="recommended"><code>&lt;caption&gt;</code> provides a title for the table.</li>
+          <li data-type="recommended"><code>&lt;thead&gt;</code> groups the header row and <code>&lt;tbody&gt;</code> groups the data rows, helping screen readers understand the table structure.</li>
         </ul>
       </section>
 
@@ -44,8 +44,8 @@
         <h2>Sortable Table</h2>
         <p>A sortable table lets users reorder rows by pressing column headers.</p>
         <ul class="feature-list">
-          <li aria-description="Required"><code>aria-sort="ascending/descending/none"</code> on a column header communicates its current sort direction to screen readers.</li>
-          <li aria-description="Required">A <code>&lt;button&gt;</code> inside a column header identifies it as a pressable sort control.</li>
+          <li data-type="required"><code>aria-sort="ascending/descending/none"</code> on a column header communicates its current sort direction to screen readers.</li>
+          <li data-type="required">A <code>&lt;button&gt;</code> inside a column header identifies it as a pressable sort control.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="a"></div>
@@ -57,10 +57,10 @@
         <h2>Expandable Rows</h2>
         <p>An expandable row allows users to reveal additional detail for a table entry without leaving the page. It is practically a <a href="accordion.html#custom-accordion">custom accordion</a> within a table.</p>
         <ul class="feature-list">
-          <li aria-description="Required">Expanding must be triggered by a dedicated button whose label or accessible name clearly communicates which row's details it opens, for example, using <code>aria-labelledby</code>.</li>
-          <li aria-description="Required"><code>aria-expanded</code> on a trigger button communicates its state to screen readers.</li>
-          <li aria-description="Required">Collapsed row details must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
-          <li aria-description="Recommended"><code>aria-controls</code> on a trigger button points to the rows it controls.</li>
+          <li data-type="required">Expanding must be triggered by a dedicated button whose label or accessible name clearly communicates which row's details it opens, for example, using <code>aria-labelledby</code>.</li>
+          <li data-type="required"><code>aria-expanded</code> on a trigger button communicates its state to screen readers.</li>
+          <li data-type="required">Collapsed row details must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
+          <li data-type="recommended"><code>aria-controls</code> on a trigger button points to the rows it controls.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>

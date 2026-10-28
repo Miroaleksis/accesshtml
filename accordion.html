@@ -33,8 +33,8 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required"><kbd>Space</kbd> and <kbd>Enter</kbd> expand and collapse the accordion when the trigger element is focused.</li>
-          <li aria-description="Required">The expanded/collapsed state must be communicated programmatically to screen readers.</li>
+          <li data-type="required"><kbd>Space</kbd> and <kbd>Enter</kbd> expand and collapse the accordion when the trigger element is focused.</li>
+          <li data-type="required">The expanded/collapsed state must be communicated programmatically to screen readers.</li>
         </ul>
       </section>
 
@@ -51,10 +51,10 @@
         <h2>Custom Accordion</h2>
         <p>A custom accordion may be necessary, for example, when the content panel does not directly follow the trigger button in the DOM. It requires explicit attributes to communicate semantics:</p>
         <ul class="feature-list">
-          <li aria-description="Required"><code>aria-expanded</code> on the trigger button communicates the expanded or collapsed state to screen readers.</li>
-          <li aria-description="Required">Collapsed panel content must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>. If the content remains partly visible, such as a faded preview, <code>inert</code> can be used instead.</li>
-          <li aria-description="Required">If the trigger button follows the content panel in DOM order, focus must move to the panel manually when the button is pressed.</li>
-          <li aria-description="Recommended"><code>aria-controls</code> points to the element the trigger controls.</li>
+          <li data-type="required"><code>aria-expanded</code> on the trigger button communicates the expanded or collapsed state to screen readers.</li>
+          <li data-type="required">Collapsed panel content must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>. If the content remains partly visible, such as a faded preview, <code>inert</code> can be used instead.</li>
+          <li data-type="required">If the trigger button follows the content panel in DOM order, focus must move to the panel manually when the button is pressed.</li>
+          <li data-type="recommended"><code>aria-controls</code> points to the element the trigger controls.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="b"></div>

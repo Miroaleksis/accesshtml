@@ -33,13 +33,13 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">A <code>&lt;nav&gt;</code> landmark with a descriptive <code>aria-label</code> identifies the menu as a specific navigation region.</li>
-          <li aria-description="Required"><code>aria-current="page"</code> identifies the currently active page.</li>
-          <li aria-description="Required"><code>aria-expanded</code> on the submenu trigger button communicates the expanded or collapsed state to screen readers.</li>
-          <li aria-description="Required">The collapsed submenu must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
-          <li aria-description="Required">If the submenu obscures content, it must be dismissible with <kbd>Esc</kbd>.</li>
-          <li aria-description="Recommended"><code>aria-controls</code> points to the submenu the trigger controls.</li>
-          <li aria-description="Recommended"><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> structures identify the menu as a list of links and communicate the total number of links to screen readers.</li>
+          <li data-type="required">A <code>&lt;nav&gt;</code> landmark with a descriptive <code>aria-label</code> identifies the menu as a specific navigation region.</li>
+          <li data-type="required"><code>aria-current="page"</code> identifies the currently active page.</li>
+          <li data-type="required"><code>aria-expanded</code> on the submenu trigger button communicates the expanded or collapsed state to screen readers.</li>
+          <li data-type="required">The collapsed submenu must be hidden from screen readers and the keyboard, for example with the <code>hidden</code> attribute or <code>display: none</code>.</li>
+          <li data-type="required">If the submenu obscures content, it must be dismissible with <kbd>Esc</kbd>.</li>
+          <li data-type="recommended"><code>aria-controls</code> points to the submenu the trigger controls.</li>
+          <li data-type="recommended"><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> structures identify the menu as a list of links and communicate the total number of links to screen readers.</li>
         </ul>
       </section>
 
@@ -65,11 +65,11 @@
         <h2>Hamburger Menu</h2>
         <p>A hamburger menu hides the navigation behind a toggle button and is mostly used on mobile devices. It can be implemented like an expandable submenu introduced in the examples above, but is usually implemented similarly to a <a href="dialog.html">modal dialog</a>.</p>
         <ul class="feature-list">
-          <li aria-description="Required">The menu toggle and close buttons do not usually have visible labels and therefore rely on <code>aria-label</code> to provide accessible names.</li>
-          <li aria-description="Required">Keyboard focus must move into the menu on open and return to the toggle button on close.</li>
-          <li aria-description="Required">If the menu obscures content, it must be dismissible with <kbd>Esc</kbd> and/or trap keyboard focus while it is open.<br>
+          <li data-type="required">The menu toggle and close buttons do not usually have visible labels and therefore rely on <code>aria-label</code> to provide accessible names.</li>
+          <li data-type="required">Keyboard focus must move into the menu on open and return to the toggle button on close.</li>
+          <li data-type="required">If the menu obscures content, it must be dismissible with <kbd>Esc</kbd> and/or trap keyboard focus while it is open.<br>
           → A native <code>&lt;dialog&gt;</code> element opened with <code>showModal()</code> provides the focus trap automatically. If another element is used, the focus trap must be implemented manually, for example, by adding <code>inert</code> to other elements on the page.</li>
-          <li aria-description="Recommended"><code>aria-haspopup="dialog"</code> communicates that the button opens a dialog.</li>
+          <li data-type="recommended"><code>aria-haspopup="dialog"</code> communicates that the button opens a dialog.</li>
         </ul>
         <h3>Example</h3>
         <div class="example-container" data-prefix="c"></div>

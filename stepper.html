@@ -32,15 +32,15 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">A <code>&lt;nav&gt;</code> landmark with a descriptive <code>aria-label</code> identifies the stepper as a specific navigation region.</li>
-          <li aria-description="Required"><code>aria-current="step"</code> identifies the current step.</li>
-          <li aria-description="Required">Upcoming step controls are marked <code>disabled</code> to indicate they cannot yet be navigated to.</li>
-          <li aria-description="Required">Completed step controls must announce their state to screen readers. This can be done, for example, using a visually hidden text element.</li>
-          <li aria-description="Required">When the stepper navigates dynamically without a page reload, <code>&lt;button&gt;</code> must be used for the controls. When each step has its own URL, <code>&lt;a&gt;</code> must be used.</li>
-          <li aria-description="Required">If the stepper navigates dynamically, keyboard focus must move to the beginning of the step content when a step is activated (only required if the controls precede the content). If the target element is not focusable by default, <code>tabindex</code> must be set to <code>-1</code>.</li>
-          <li aria-description="Required">If the stepper is long, it must scale to mobile screens without overflowing. One way to achieve this is by stacking the steps vertically on smaller screens.</li>
-          <li aria-description="Recommended"><code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> structures identify the stepper as a list of steps and communicate the total number of steps to screen readers.</li>
-          <li aria-description="Recommended">Step state (completed, current, upcoming) is communicated through icon, font weight and disabled state, not by color alone.</li>
+          <li data-type="required">A <code>&lt;nav&gt;</code> landmark with a descriptive <code>aria-label</code> identifies the stepper as a specific navigation region.</li>
+          <li data-type="required"><code>aria-current="step"</code> identifies the current step.</li>
+          <li data-type="required">Upcoming step controls are marked <code>disabled</code> to indicate they cannot yet be navigated to.</li>
+          <li data-type="required">Completed step controls must announce their state to screen readers. This can be done, for example, using a visually hidden text element.</li>
+          <li data-type="required">When the stepper navigates dynamically without a page reload, <code>&lt;button&gt;</code> must be used for the controls. When each step has its own URL, <code>&lt;a&gt;</code> must be used.</li>
+          <li data-type="required">If the stepper navigates dynamically, keyboard focus must move to the beginning of the step content when a step is activated (only required if the controls precede the content). If the target element is not focusable by default, <code>tabindex</code> must be set to <code>-1</code>.</li>
+          <li data-type="required">If the stepper is long, it must scale to mobile screens without overflowing. One way to achieve this is by stacking the steps vertically on smaller screens.</li>
+          <li data-type="recommended"><code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> structures identify the stepper as a list of steps and communicate the total number of steps to screen readers.</li>
+          <li data-type="recommended">Step state (completed, current, upcoming) is communicated through icon, font weight and disabled state, not by color alone.</li>
         </ul>
       </section>
 

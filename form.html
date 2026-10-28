@@ -32,14 +32,14 @@
           <span class="recommended">Recommended</span>
         </div>
         <ul class="feature-list">
-          <li aria-description="Required">A native <code>&lt;form&gt;</code> element enables built-in browser validation: required fields prevent submission, receive focus on error and display error hints automatically. It also improves browser autofill accuracy. Without a <code>&lt;form&gt;</code> element, these features are not available and must be implemented manually.</li>
-          <li aria-description="Required">Each input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
-          <li aria-description="Required"><code>aria-describedby</code> associates help texts, error messages and prefixes/suffixes with each input field.</li>
-          <li aria-description="Required">Required input fields must be indicated clearly with text. If a symbol like an asterisk (*) is used, it must be explained at the top of the form. The fields must also be programmatically marked <code>required</code> to indicate them to the browser.</li>
-          <li aria-description="Required"><code>autocomplete</code> helps users fill in common fields such as name, email and address.</li>
-          <li aria-description="Recommended">Even though using the <code>&lt;form&gt;</code> element is usually enough to fulfill the standard accessibility requirements, using it alone has disadvantages. For example, if several errors are present, only the first one is exposed. The user has to correct the error and resubmit the form for the next error to be identified.<br>
+          <li data-type="required">A native <code>&lt;form&gt;</code> element enables built-in browser validation: required fields prevent submission, receive focus on error and display error hints automatically. It also improves browser autofill accuracy. Without a <code>&lt;form&gt;</code> element, these features are not available and must be implemented manually.</li>
+          <li data-type="required">Each input field must have its own visible <code>&lt;label&gt;</code>, associated via matching <code>for</code> and <code>id</code> attributes or nesting. Multiple interactive controls must not be nested inside a single <code>&lt;label&gt;</code>.</li>
+          <li data-type="required"><code>aria-describedby</code> associates help texts, error messages and prefixes/suffixes with each input field.</li>
+          <li data-type="required">Required input fields must be indicated clearly with text. If a symbol like an asterisk (*) is used, it must be explained at the top of the form. The fields must also be programmatically marked <code>required</code> to indicate them to the browser.</li>
+          <li data-type="required"><code>autocomplete</code> helps users fill in common fields such as name, email and address.</li>
+          <li data-type="recommended">Even though using the <code>&lt;form&gt;</code> element is usually enough to fulfill the standard accessibility requirements, using it alone has disadvantages. For example, if several errors are present, only the first one is exposed. The user has to correct the error and resubmit the form for the next error to be identified.<br>
           &rarr; Due to this, other accessibility features should be used in conjunction, such as field specific custom error messages. The messages must clearly indicate the nature of the error and provide guidance on how to correct it.</li>
-          <li aria-description="Recommended"><code>aria-label</code> or <code>aria-labelledby</code> provides an accessible name for a <code>&lt;form&gt;</code>, which exposes it as a landmark to screen readers.</li>
+          <li data-type="recommended"><code>aria-label</code> or <code>aria-labelledby</code> provides an accessible name for a <code>&lt;form&gt;</code>, which exposes it as a landmark to screen readers.</li>
         </ul>
       </section>
 
